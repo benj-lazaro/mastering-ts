@@ -1,0 +1,30 @@
+TypeScript Overview
+-------------------
+- Static Checking is a feature that 
+    - Looks & detects errors in the code
+        - Without executing the code or before runtime
+
+
+- TypeScript is a "Static Type Checker"
+    - It perform the same pre-runtime Static Checking
+
+    - Based its checks on the type or kinds of data used in the code
+        - e.g. string, number, object w/ particular set of properties
+
+    - This type system helps
+        - Find errors
+        - Analyze code while being typed
+        - BUT it ONLY EXISTS in development
+
+
+- TypeScript's workflow
+    - Type code in TypeScript
+        - Detect and fix identified errors in code
+
+    - Compile the (TypeScript) code into regular JavaScript code
+        - With the "strict mode" enabled
+        - To be run on a browser or Node.js environment
+
+
+- TypeScript online playground
+    - Website (https://www.typescriptlang.org/play/?#code/Q)

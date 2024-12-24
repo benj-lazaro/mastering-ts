@@ -1,0 +1,15 @@
+Course Prerequisites
+--------------------
+- JavaScript foundational knowledge on:
+    - Variables
+    - Arrays
+    - Objects
+    - Functions
+    - Conditionals
+    - Loops
+
+
+- Assumed to know but NOT required
+    - Classes
+    - DOM (Document Object Model)
+    - React

@@ -1,0 +1,19 @@
+The Case for TypeScript
+-----------------------
+- TypeScript is a programming language
+    - Built on top of JavaScript
+    
+    - It is a superset of JavaScript
+        - Superset = JavaScript code is considered valid TypeScript code
+
+    - Built with the purpose of helping avoid the
+        - Common pitfalls and bugs that arise in JavaScript
+
+    - It seeks to improve the experience of writing JavaScript
+        - By adding a type system to JavaScript
+
+        - It provides special checks & enhacements
+            - To the JavaScript syntax
+            
+        - It offers a much better development experience
+            - Helps avoid bugs

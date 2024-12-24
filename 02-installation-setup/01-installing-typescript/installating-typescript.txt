@@ -1,0 +1,24 @@
+Installing TypeScript
+---------------------
+- Install Node
+    - Website (https://nodejs.org/en)
+    - Select the LTS version
+    - Run installer
+        - This installs Node.js & its the dependency manager "npm"
+
+
+- To install TypeScript via npm
+    - On a individual project(s):
+    
+        npm install typescript --save-dev
+
+        npm i typescript --save-dev
+
+    
+    - On a global-scale installation:
+        - Provides access to the TypeScript Compiler (i.e. tsc)
+    
+        sudo npm install -g typescript
+
+        sudo npm i -g typescript
+

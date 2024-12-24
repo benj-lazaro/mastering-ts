@@ -1,2 +1,3 @@
 # mastering-ts
-Notes on TypeScript
+
+Notes from Colt Steele's Mastering TypeScript

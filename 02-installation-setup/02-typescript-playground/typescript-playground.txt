@@ -1,0 +1,24 @@
+TypeScript Playground
+---------------------
+- A browser-based environment / learning tool that
+    - Allows to write TypeScript code immediately
+        - Without installing anything locally
+
+    - Allows to configure the TypeScript compiler
+        - Without tinkering the local TypeScript compiler settings
+
+    - Website (https://www.typescriptlang.org/play/)
+
+    - Ideal for
+        - PCs with a local account that has NO permission to install software
+        
+        - PCs experiencing problems installing required software (i.e. Node.js) locally
+        
+        - Trying out features or documentation code samples
+            - Without the need to setup a project & create new files
+        
+            - Able to see side-by-side
+                - TypeScript code
+                - Corresponding compiled JavaScript code
+
+    

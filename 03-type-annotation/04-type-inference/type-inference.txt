@@ -1,0 +1,11 @@
+Type Inference
+--------------
+- It refers to TypeScript compiler's ability
+    - To infer types based on the assigned value (to a variable)
+
+    - TypeScript can remeber a value's types
+        - Without being dependent on Type Annotation
+        - Enforces the inferred type moving forward
+
+    - NOTE: There is a place for Type Annotations
+        - BUT for most of the time, it is NOT needed

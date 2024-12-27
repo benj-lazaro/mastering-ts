@@ -16,7 +16,7 @@ Our First Type Annotation
         - NOTE: Primitive types are written in lowercase
 
 
-- Strings are typed using the Type annontation of "string"
+- Strings are typed using the type annontation of "string"
 
 
 - The TypeScript compiler triggers an error

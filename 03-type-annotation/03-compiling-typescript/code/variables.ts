@@ -1,7 +1,7 @@
 // Variable type declaration
 
 // Variable annotated with type of string
-let movieTitle = "hackers";
+let movieTitle: string = "hackers";
 movieTitle.toLocaleUpperCase();
 
 // Variable annotated with type of number

@@ -16,6 +16,9 @@ Our First Type Annotation
         - NOTE: Primitive types are written in lowercase
 
 
+- Strings are typed using the Type annontation of "string"
+
+
 - The TypeScript compiler triggers an error
     - When the variable's value does NOT MATCH with the declared annotated type
         - e.g. number value assigned to a variable annotated with a string
@@ -23,4 +26,4 @@ Our First Type Annotation
 
 Syntax:
 
-    let | const <variable_name>: <type> = <value>;
+    let | const <variable_name>: string = <string_value>;

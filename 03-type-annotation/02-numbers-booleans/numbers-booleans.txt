@@ -1,0 +1,18 @@
+Working with Numbers and Booleans
+---------------------------------
+- In Typescript (and JavaScript)
+    - Numbers are just numbers    
+    - Booleans represent simple "true" or "false" values
+
+
+- Numbers are typed using the type annontation of "number"
+
+
+- Booleans are typed using the type annontation of "boolean"
+    
+
+Syntax:
+
+    let <variable_name>: number = <number_value>;    
+
+    let <variable_name>: boolean = <true | false>;

@@ -1,0 +1,15 @@
+Compiling TypeScript
+--------------------
+- To compile TypeScript code down to plain JavaScript
+    - Launch VS Code's Integrated Terminal
+
+    - Type on the terminal
+    
+        tsc <typescript_file>.ts
+
+    - Corresponding JavaScript file is generated
+        - Type annotations in TypeScript 
+            - Are removed in the generated JavaScript code
+
+        - Keyword "var" instead of "let" is used
+            - Dependent on the compiler's ECMAScript version settings

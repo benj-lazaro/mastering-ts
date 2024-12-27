@@ -1,0 +1,26 @@
+Our First Type Annotation
+-------------------------
+- To declare a Variable type
+    - Assigning a basic (primitive) type to a variable
+
+    - Use the keyword "let"
+        - Followed by the variable's name
+
+    - Add ":"
+        - Right after the variable name
+    
+    - Type the (data) type
+        - The expected data type to be stored in the variable
+            - This is referred to as "Type Annotation"
+
+        - NOTE: Primitive types are written in lowercase
+
+
+- The TypeScript compiler triggers an error
+    - When the variable's value does NOT MATCH with the declared annotated type
+        - e.g. number value assigned to a variable annotated with a string
+
+
+Syntax:
+
+    let | const <variable_name>: <type> = <value>;

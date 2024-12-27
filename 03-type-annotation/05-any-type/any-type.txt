@@ -1,0 +1,9 @@
+The any Type
+------------
+- The "any" type is an escape hatch & unique to TypeScript
+    - It turns OFF TypeScript's "type checking"
+    - Use it SPARINGLY!
+
+    - Typed using the type annontation of "any"
+
+

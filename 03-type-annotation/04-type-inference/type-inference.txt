@@ -9,3 +9,8 @@ Type Inference
 
     - NOTE: There is a place for Type Annotations
         - BUT for most of the time, it is NOT needed
+
+
+Syntax:
+
+    let | const <variable_name> = <value>;

@@ -1,0 +1,26 @@
+How We Use TypeScript
+---------------------
+- The workflow of a locally installed TypeScript
+    - Create a file
+        - Filename extension of ".ts"
+
+        - NOTE: filename extension ".tsx"
+            - TypeScript with JSX syntax
+            - Used with the React framework
+
+    - Write TypeScript code in it
+        - TypeScript compiler is active while code is written
+            - Immediately catches error before runtime
+            - Offers tips to address error(s)
+
+        - Save the changes
+
+    - Compile TypeScript code into JavaScript
+        - Open VS Code's Integrated Terminal
+
+        - Compile the TypeScript code using tsc (TypeScript compiler)
+
+            tsc <filename>.ts
+
+        - Generate the corresponding JavaScript file
+            - On the same directory where the TypeScript file is located

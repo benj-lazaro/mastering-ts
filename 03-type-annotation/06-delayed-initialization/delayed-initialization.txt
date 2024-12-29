@@ -1,0 +1,18 @@
+Delayed Initialization & Implicit any
+-------------------------------------
+- To implement a situation wherein
+    - Declare a variable (with Type Annotation) separately 
+        - From initializing it
+
+    - By not annotating the type assigned to the variable
+        - TypeScript infers the variable to be of type "any"
+        - NOTE: VS Code hints that the variable implicitly has an "any" type
+
+    - This is NOT ADVISABLE
+        - In doing so disables TypeScript's "type checking" feature
+        
+        - Better to annotate the type of a variable
+            - Even when NOT providing an initial value
+
+        - The example demonstrates the importance of Type Annotation
+            - It prevents implicit "any"

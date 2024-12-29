@@ -1,0 +1,20 @@
+Function Parameter Annotations
+------------------------------
+- To specify the type of a funcion's parameter(s) in a function definition
+    - It uses the same syntax as annotating the type of a variable
+    
+    - This allows TypeScript to ENFORCE
+        - The type of value(s) being passed into a function as argument
+
+
+Syntax:
+
+    // Normal function
+    function <name>(<parameter>: <type>, ...) {
+        ...
+    }
+
+    // Arrow function
+    const <funcion_name> = (<parameter>: <type>, ...) => {
+        ....
+    }

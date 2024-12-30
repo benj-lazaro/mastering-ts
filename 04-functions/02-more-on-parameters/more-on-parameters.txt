@@ -1,0 +1,25 @@
+More on Function Parameter Annotations
+--------------------------------------
+- Each parameter of a function
+    - Can have its own distinct type annotation
+    - NOTE: The order of how the parameters (and the corresponding types) is IMPORTANT
+    
+    - Incorrect order of argument values passed to a function
+        - TypeScript will immediately trigger an error
+
+    - Too many or little argument values passed to a function
+        - TypeScript will immediately trigger an error
+
+
+
+Syntax:
+
+    // Normal function
+    function <name>(<parameter>: <type>, <parameter>: <type>, ...) {
+        ...
+    }
+
+    // Arrow function
+    const <funcion_name> = (<parameter>: <type>, <parameter>: <type>, ...) => {
+        ....
+    }

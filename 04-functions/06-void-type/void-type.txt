@@ -1,0 +1,14 @@
+The void Type
+-------------
+- The "void" is a return type (ONLY) for functions
+    - It does NOT RETURN anything
+    
+    - It is best used for a function that 
+        - Is NOT expected to return anything
+
+    - TypeScript can infer the type "void" faily well
+        - It is best to EXPLICITLY annotate the function's return value
+
+    - Without EXPLICITLY annotating the type "void"
+        - It is possible to insert a "return" statement inside the function
+        - Without triggering a TypeScript error

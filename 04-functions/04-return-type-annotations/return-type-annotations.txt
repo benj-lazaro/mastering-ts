@@ -1,0 +1,37 @@
+Return Type Annotations
+-----------------------
+- TypeScript can specify the type (of the value) returned by a function
+    - TypeScript often can infers the type of the return value
+
+    - HOWEVER it is best to use EXPLICIT annotations
+        - It makes the type of the return value OBVIOUS
+
+        - In the event that the keyword "return" is NOT included on the return value
+            - TypeScript infers the type to be of "void"
+
+        - When unintentionally "forgot" to include the keyword "return"
+            - TypeScript infers the type of the return value to be of "void"
+
+
+- To implement a return type annotation
+    - Right after a function's parameter list
+    - Use the ":" operator
+    - Followed by the type
+
+
+- To annotate multiple types on a return value
+    - Use the "|" operator in-between types to separate them
+    - NOTE: This is referred as a "Union Type"
+
+
+Syntax:
+
+    // Normal function
+    function <name>(<parameters>): <type> [| <type>] {
+        ...
+    }
+
+    // Arrow function
+    const <funcion_name> = (<parameters>): <type> [| <type>] => {
+        ....
+    }

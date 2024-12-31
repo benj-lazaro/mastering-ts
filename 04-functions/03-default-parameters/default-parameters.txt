@@ -1,0 +1,24 @@
+Working With Default Parameters
+-------------------------------
+- To add default value(s) to function parameter(s)
+    - It should come AFTER the type annotation of the parameter
+
+
+- To implement on the targeted parameter
+    - Right after the parameter's type annotation
+    
+    - Place the "=" operator
+        - Followed by the default value
+
+
+Syntax:
+
+    // Normal function
+    function <name>(<parameter>: <type> = <default_value>, ...) {
+        ...
+    }
+
+    // Arrow function
+    const <funcion_name> = (<parameter>: <type> = <default_value> ...) => {
+        ....
+    }

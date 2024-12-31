@@ -1,0 +1,21 @@
+The never Type
+--------------
+- The "never" type represent a value that NEVER occurs
+    - It is used to annotate a function that
+        - ALWAYS (intended to) throw an exception
+        - NEVER finishes executing (e.g. in a continuous loop)
+
+    - This type is unique to TypeScript
+        - NOT commonly used
+
+    - Failing to annotate an intended function with type "never"
+        - TypeScript will infer the type "void" instead
+
+
+- NOTE: The type "void" !== "never"
+    - The former (behind the scenes) returns the value of type "undefined" or "null"
+        - Technically "void" is a type of value
+
+    - The latter refers to a function that
+        - Does NOT return anything at all
+        - Continues to execute

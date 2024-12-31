@@ -1,0 +1,18 @@
+Anonymous Function Contextual Typing
+------------------------------------
+- When writing a function (named or anonymous)
+    - NOT specifying the type of its parameters
+    - TypeScript will infer to be of type "any"
+
+
+- Working with an unnamed function (and method)
+    - TypeScript can AUTOMATICALLY infer the type of its parameter(s)
+    - Based on the context it is being called in
+
+
+Syntax:
+
+    // Arrow function
+    const <funcion_name> = (<parameters>) [: <type>] => {
+        ....
+    }

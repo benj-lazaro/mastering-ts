@@ -1,0 +1,46 @@
+Working With object Types 
+-------------------------
+- Objects (i.e. object literal) in TypeScript are the same as in JavaScript
+    - Enclosed in a pair of { }
+    - Inside consists of properties and corresponding values (i.e. type)
+
+
+- In TypeScript
+    - Create annotations that are supposed to annotate objects
+    - To describe the "shape" of an object (i.e. properties)
+
+    - Often used on:
+        - Storing an object to a variable
+        - Return an object from a function
+        
+        - Writing an annotation for a function parameter to describe
+            - What type (or shape) of object does a function expect
+            - What the object should look like in the annotation  
+
+    - Keep in mind that an error will be thrown when:
+        - Accessing a property that is NOT defined
+        - Perfoming operations without keeping types in mind
+
+
+- To declare an object type in a function's parameter list
+    - Define the object's name
+    - Followed by a ":"
+    - Then an object using a pair of { }
+    - Inside the object
+        - The property name
+        - Followed by a ":"
+        - Then the corresponding type
+
+
+Syntax:
+
+    // Normal function
+    function <name>(<object_name>: {<property>: <type>, ...}, ... ): <type> {
+        ...
+    }
+
+    // Arrow function
+    const <function_name> = (<object_name>: {<property>: <type>, ...}, ...): <type> => {
+        ...
+    }
+

@@ -1,0 +1,43 @@
+More Object Types
+-----------------
+- In addition to annotating a function parameter with some object
+    - It can do the same thing for a:
+        - Return value
+        
+        - Variable
+            - A bit odd to implement 
+            - However, it is valid to type a variable this way
+            - It presents the "pattern to follow" or "shape" of the object (that is about to receive)
+
+
+- To implement on a variable
+    - Place the ":" after the variable name
+
+    - Followed by the object type
+        - Prsented with a pair of { }
+        - Inside the is / are properties and corresponding types
+
+
+- To implement as a return value
+    - Place the ":" after the parameter list 
+    
+    - Followed by an object using a pair of { }
+        - Inside, declare the property name
+        - Followed by a ":"
+        - Then the type
+
+Syntax:
+
+    // Variable
+    let <name> : {<property>: <type>, ...} = <assigned_value>;
+
+    // Normal function
+    function <name>(): { <property>: <type>, ... } {
+        return { <property>: <type>, ... };
+    }
+
+    // Arrow function
+    const <name> = (): { <property>: <type>, ... } => {
+        return { <property>: <type>, ... };
+    }
+

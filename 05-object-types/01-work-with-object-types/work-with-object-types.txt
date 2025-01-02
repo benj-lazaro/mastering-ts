@@ -1,4 +1,4 @@
-Working With object Types 
+Working With Object Types 
 -------------------------
 - Objects (i.e. object literal) in TypeScript are the same as in JavaScript
     - Enclosed in a pair of { }

@@ -1,0 +1,25 @@
+Optional Properties
+-------------------
+- With object types
+    - It is possible to make some of its properties optional
+
+    - When defining the properties an object type using Type Alias
+        - Place the operator "?"
+        - Right AFTER the name of the property
+        - BEFORE the ":" operator & its assigned types
+    
+    - This informs TypeScript that the targeted property that
+        - Is NOT required and OPTIONAL
+        
+        - Leaving it unincluded when used with a constant, function or variable
+            - TypeScript will NOT flag an error
+
+
+Syntax:
+
+    type <name> = {
+        <property_name>: <type>;
+        ...
+        <optional_property_name>?: <type>:
+    };
+

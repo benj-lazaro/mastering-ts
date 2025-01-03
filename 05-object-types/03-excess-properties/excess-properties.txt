@@ -1,0 +1,26 @@
+Excess Properties
+-----------------
+- With regards to object parameters in a function
+    - Passing an object as an (inline) argument value to a function
+
+        <function_name>({<property>: <value>, ...}); 
+
+    - If the object contains a property NOT defined
+        - In the function's parameter list
+        - TypeScript will flag an error
+
+
+    - HOWEVER, with the same object separately assigned to a constant / variable
+        - Pass said constant / variable as argument to the same function
+        - TypeScript will NOT flag an error
+
+        let <constant_name> = {<property>: <value>, ...};
+        
+        <function_name>(<variable>);
+
+    - What happends under the hood
+        - TypeScript checks ONLY the properties
+            - Defined in the function's parameter list
+            - IGNORES the excess properties that came with the object 
+
+        - NOTE: This was a design choice made early in TypeScript generally

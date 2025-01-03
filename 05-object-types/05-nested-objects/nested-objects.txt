@@ -1,0 +1,16 @@
+Nested Objects
+--------------
+- A nested object type annotations uses
+    - The same syntax as a normal object type annotation
+    
+    - EXCEPT that some of its properties have 
+        - Nested object assigned as value
+    
+
+- Best implement using a Type Alias
+    - Due to the complexity or multiple properties of the object
+
+    - Annotating an inline argument with a nested object type
+        - While doable it results to writing ugly code
+        
+    

@@ -1,0 +1,79 @@
+Creating Type Aliases
+---------------------
+- Instead of writing object types in the form of an annotation
+    - They can be declared separately using a Type Alias
+
+    - It simply describes the desired "shape" of an object type
+        - It does NOT CREATE a new object type
+
+        - It serves as a placeholder (i.e. alias) that
+            - Can be reused elsewhere in the code
+
+        - It allows the code to be more readable
+
+    - Common use case
+        - An object type with multiple / nested properties
+
+
+- To implement an object type alias
+    - Use the keyword "type"
+
+    - Followed by the name for the object type
+        - Written using the CamelCase naming convention
+
+    - Next is the "=" operator
+
+    - Then a pair of { } that holds the object type's
+        - Property name
+        - Followed by a ":"
+        - Then the corresponding type of the property
+        - Each property is terminated by a ";"
+
+    - Close the pair of { } with a ";"
+
+
+- To use an object type alias in a function
+    - Annotate the function's argument with the created type alias
+    - Annotate the function's return value with the created type alias
+
+
+- Type alias is NOT ONLY limited to object type
+    - It can also be used for primitive types
+    - Although it is NOT commonly used
+
+
+- To implement an primitive type alias
+    - Use the keyword "type"
+
+    - Followed by the name for the object type
+        - Written using the CamelCase naming convention
+
+    - Next is the "=" operator
+
+    - Then the corresponding primitive type
+
+
+Syntax:
+
+    // Object type alias
+    type <name> = {
+        <property_name>: <type>;
+        ...
+    };
+
+    // Primitive type alias
+    type <name> = <primitive_type>
+
+
+    // Object type alias on an arrow function
+    const <name> = (<arg>: <type_alias> ): <type_alias> => {
+        ...
+    }
+
+    // Object type alias on a normal function
+    funcion <name>(<arg>: <type_alias>): <type_alias> {
+        ...
+    }
+
+    // Primitive type alias on a variable declaration
+    let <variable_name>: <primitive_type_alias> = <initial_value>;

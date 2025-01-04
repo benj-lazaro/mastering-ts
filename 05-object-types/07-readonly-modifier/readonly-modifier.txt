@@ -1,0 +1,23 @@
+The readonly Modifier
+---------------------
+- The object types have a special modifier keyword "readonly"
+    - This is NOT a JavaScript keyword
+
+    - It marks an object's property as READ-ONLY
+        - When an attempt to update / write on said property
+            - TypeScript flags an error
+
+        - The property can be read from
+            - But can NOT be written on
+
+
+- To implement within a Type Alias of an object type
+    - Place the keyword "readonly" before the targeted property
+
+
+Syntax:
+
+    type <name> = {
+        readonly <property_name>: <type>;
+        ...
+    };

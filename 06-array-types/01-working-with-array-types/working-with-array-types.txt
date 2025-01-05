@@ -1,0 +1,24 @@
+Working With Array Types
+------------------------
+- Arrays can be typed 
+    - Use Type annontation to specify the type of its items 
+        - REQUIRED when working initially with an empty array
+        - Otherwise, TypeScript implicitly annontates with the type of "any"
+    
+    - Then an empty array bracket []
+        - NO spaces between the annotated type and the []
+
+    - Next is the "=" operator
+
+    - Followed by either
+        - An empty array
+        - An array with initial items based on the annotated type
+    
+    - NOTE: These arrays ONLY allow items of ONE type inside them
+
+
+Syntax:
+
+    const <name>: <type>[] = [];
+
+    const <name>: <type>[] = [<item_1>, ..., <item_n> ];

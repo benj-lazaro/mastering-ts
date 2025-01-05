@@ -1,0 +1,31 @@
+Intersection Types
+------------------
+- Refers to multiple types created using Type Alias
+    - Then combining them using the "&" operator
+
+
+- To add a new property of an "intersected" type
+    - Use the "&" operator
+    - Followed by the property enclosed in a pair of { }
+
+
+Syntax:
+
+    type <type_name_1> = {
+        <property>: <type>;
+        ...
+    }
+
+    type <type_name_2> = {
+        <property>: <type>;
+        ...
+    }
+
+    // Direct intersection of previous types
+    type <type_name_3> = <type_name_1> & <type_name_1>;
+
+    // Intersection of previous types with additional properties
+    type <type_name_4> = <type_name_1> & <type_name_1> & {
+        <property>: <type>;
+        ...
+    };

@@ -1,0 +1,27 @@
+More Array Syntax
+-----------------
+- Another way to declare an array in TypeScript
+    - Use the keyword "Array"
+    
+    - Followed by the type
+        - Enclosed within a pair of < >
+    
+    - Next is the "=" operator
+
+    - Then the array itself, either as
+        - An empty array
+        - An array with initial items
+
+    - NOTE: The alternative syntax is a bit clunky
+        - Compared to the previous version of declaring an array
+
+
+- Arrays are NOT ONLY limited to primitive types
+    - It can also work with custom types using Type Alias
+
+
+Syntax:
+
+    const <name>: Array<type> = [];
+
+    const <name>: Array<type> = [<item_1>, ..., <item_n> ];

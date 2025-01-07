@@ -1,0 +1,39 @@
+Multidimensional Arrays 
+-----------------------
+- To create multidimensional (nested) arrays in TypeScript
+    - It is similar to declaring a one-dimensional array
+    
+    - EXCEPT an additional pair of [] is declared
+        - Right after the first pair []
+        - Based on the number of dimensional arrays to be created
+            - e.g. two dimensional = [][]
+                   three dimensional = [][][]
+
+    - NOTE: Syntax can be annoying working on 
+        - More than two (2) dimensional arrays
+
+
+Syntax:
+
+    const <name>: <type>[][ <number_of_dimensions> ] = [ 
+      [<item_1>, ..., <item_n>], 
+      [<item_1>, ..., <item_n>],
+      [<item_1>, ..., <item_n>],
+      ... 
+    ];
+
+
+    // Two-dimensional
+    const <name>: <type>[][] = [ 
+      [<item_1>, ..., <item_n>], 
+      [<item_1>, ..., <item_n>],
+      [<item_1>, ..., <item_n>],
+      ... 
+    ];
+
+    // Three-dimensional
+    const <name>: <type>[][][] = [ 
+      [[<item_1>, ..., <item_n>]],
+      [[<item_1>, ..., <item_n>]],
+      ...
+    ];

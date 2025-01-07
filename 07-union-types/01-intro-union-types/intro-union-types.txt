@@ -1,0 +1,21 @@
+Introducing Union Types
+-----------------------
+- Union types allows to give a value different possible types
+    - If the eventual value's type is included
+        - TypeScript is happy
+
+
+- To implement a Union type
+    - Use the "|" operator 
+        - In-between types that will be included (or considered as valid)
+
+    - It is NOT limited to primtive (built-in) types
+        - 
+
+    - NOTE: It is best practice to
+        - Be narrow as possible with the types to be included in a union
+
+
+Syntax:
+
+    const <name>: <type_1> | <type_n> = <value>;

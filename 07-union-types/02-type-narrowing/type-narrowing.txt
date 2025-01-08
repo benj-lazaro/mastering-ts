@@ -1,0 +1,8 @@
+Type Narrowing With Union Types
+-------------------------------
+- Type narrowing is simply doing a type check 
+    - To identify the specific type of a value
+        - BEFORE working with it
+
+    - Employs the use of the "typeof" operator
+

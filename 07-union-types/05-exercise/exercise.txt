@@ -1,0 +1,4 @@
+Exercise
+--------
+- Open the starter file (starter.ts)
+    - Place the answer code on a separate file (solution.ts)

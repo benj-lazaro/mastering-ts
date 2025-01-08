@@ -1,0 +1,25 @@
+Literal Types
+-------------
+- Literal types are NOT just types
+    - BUT LITERALLY the value themselves too
+        - e.g. let zero: 0 = 0
+
+    - On its own, it is NOT helpful
+        - BUT combining it with Unions
+        - Offers a fine-tuned type options for TypeScript to enforce
+
+    - Assigning a new value that is NOT among the declared literal types
+        - TypeScript will flag an error
+
+
+Syntax:
+
+    // Arrow function
+    const <name> = (<arg>: <literal_1> | <literal_n> ) => {
+        ...
+    }
+
+    // Normal function
+    function <name>(<arg>: <literal_1> | <literal_n> ) {
+        ...
+    }

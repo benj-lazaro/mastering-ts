@@ -1,0 +1,12 @@
+Union Types and Arrays
+----------------------
+- In order for arrays to hold items of more than one (specific) type
+    - Enclose the Union type within a pair of ( )
+    - Followed by a pair of [ ]
+
+
+Syntax:
+
+    const <name>: (<type_1> | <type_n>)[] = [ <value_1>, <value_n> ];
+
+    

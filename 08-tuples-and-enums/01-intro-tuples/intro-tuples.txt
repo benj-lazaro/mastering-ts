@@ -1,0 +1,16 @@
+Introducting Tuples
+-------------------
+- Tuple is a special type
+    - Exclusive ONLY to TypeScript
+    
+    - It is an array 
+        - With a FIXED LENGTH
+        - Items are ORDERED with a FIXED SET of types
+    
+    - Think of it as a super rigid array
+
+
+Syntax:
+
+    let <name>: [ <type_1>, <type_n> ];
+

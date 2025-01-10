@@ -1,0 +1,17 @@
+A Bit More On Enums
+-------------------
+ - Enums created without any specified values on its members
+    - TypeScript IMPLICTLY assigns numeric values to each member
+        - Starts at 0 and going up
+
+    - It can be EXPLICTLY changed
+        - Using the "=" operator and then assigning either 
+            - A number type
+                - Increments the number from the assigned number
+                - Separate number value for each member
+
+            - A string type
+
+
+- Enums members does NOT have to be homogenous
+    - It can have a mix of number and string type members

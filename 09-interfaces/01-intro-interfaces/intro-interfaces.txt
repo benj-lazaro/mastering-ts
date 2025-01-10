@@ -1,0 +1,18 @@
+Introducing Interfaces
+----------------------
+- Interfaces serve ALMOST the exact same purpose as Type Aliases
+    - With a SLIGHTLY DIFFERENT syntax
+        - It does NOT use the "=" operator as the Type Alias
+
+    - It is used to create reusable, modular types
+        - That describe the shape of an object & ONLY for an object
+        - Including its properties & methods
+
+
+Syntax:
+
+    interface <name> {
+        <property_name>: <type>;
+        ...
+    }
+

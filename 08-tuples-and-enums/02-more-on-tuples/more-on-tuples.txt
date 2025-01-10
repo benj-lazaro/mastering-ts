@@ -1,0 +1,38 @@
+More On Tuples 
+--------------
+- In addition to being an array of FIXED LENGTH
+    - Tuples can have items of different types
+
+    - Provided it STRICTLY FOLLOWS the ORDER
+        - Of the items and its corresponding types
+        - TypeScript flags an error when the order is violated
+
+
+- NOTE: TypeScript's WEIRD Tuple design & implementation
+    - AFTER a tuple is CREATED, TypeScript does NOT PREVENT
+        - New items being pushed in to the tuple
+        - Existing items from being popped off from the tuple
+
+    - It has something to do with how JavaScript arrays work
+        - It is a limitation of tuples
+
+    - Good news is that tuples are NOT that used very much
+        - Implemented on situation to store
+            - Simple data that are instrinsically linked
+                - e.g. RGB or HSL colors
+
+            - For complex data, use an object instead
+                - e.g. HTTP response code & corresponding status message
+    
+
+Syntax:
+
+    // Custom type of tuple
+    type <tuple_name> = [<type_1>, ..., <type_n>];
+
+    // Array of tuples
+    const <array_name>: <tuple_name>[] = [];
+
+    <array_name>.push(<tuple_item>);
+    
+    <array_name>.pop();

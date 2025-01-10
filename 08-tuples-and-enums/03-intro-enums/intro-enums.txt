@@ -1,0 +1,28 @@
+Introducing Enums 
+-----------------
+- Enums defines a set of named constants
+    - These constants can have number or string type values
+        
+    - This is UNIQUE to TypeScript
+        - Does NOT exists in JavaScript
+
+    - Often used 
+        - When consistently referencing a set of value w/in the code
+
+    - By convention
+        - Enum name uses the CamelCase naming convention
+        - Enum members are all capitalized
+
+    - The implict value assigned to Enum members
+        - Can be changed EXPLICTLY using the "=" operator
+        - Followed by the corresponding value (number or string type)
+
+
+Syntax:
+
+    enum <name> {
+        <name> [ = <number_or_string_type_value> ],
+        ...
+    }
+
+    

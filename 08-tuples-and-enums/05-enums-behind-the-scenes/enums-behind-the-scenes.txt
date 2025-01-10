@@ -1,0 +1,45 @@
+Enums Behind The Scenes 
+-----------------------
+- Enums behind the scenes gets transpiled into an object in JavaScript
+    - With a function expression wrapped around it
+    
+    - Resulting to new code in JavaScript
+        - Impacting (i.e. polluting) the JavaScript code
+    
+    - The community decided to MOVE AWAY from this approach and
+        - For TypeScript to STICK CLOSER to JavaScript instead
+
+
+- To address this concern
+    - Prefix the Enum declaration with the keyword "const"
+        - This does NOT make the Enum a constant variable
+
+    - This erases the transpiled "pollutant" code (i.e. object) from JavaScript
+        - Replaces EVERY reference to Enum members 
+            - With their corresponding assigned value
+
+        - In addtion, TypeScript inserts comments
+            - 
+        - TypeScript generates a comments 
+            - On the corresponding Enum member associated to the value 
+            - This helps the JavaScript code to be more readable
+
+    - This servers as a "middle-ground" solution
+        - It does NOT CHANGE the entire JavaScript code (it does a little bit)
+        - It does NOT ADD new object(s)
+
+        - It offers the benefits of Enums
+            - VS code's auto-completion
+            - Neat way of organizing named constants
+
+        - Alternatively, an object or Type Alias 
+            - Can replace an Enum
+            - BUT loses the offered (a bit trivial) benefits
+
+
+Syntax:
+
+    const enum <name> {
+        <name> [ = <number_or_string_type_value> ],
+        ...
+    }

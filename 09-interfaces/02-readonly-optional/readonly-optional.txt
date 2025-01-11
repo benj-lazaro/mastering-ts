@@ -1,0 +1,26 @@
+Readonly and Optional Interface Properties
+------------------------------------------
+- To implement an optional property in an Interface 
+    - Uses the same syntax as in Type Alias
+
+    - Place the "?" operator right AFTER the property name 
+        - But BEFORE the ":" operator & corresponding type (Type Annotation)
+
+
+- To implement a read only property in an Interface
+    - Uses the same syntax as in Type Alias
+
+    - Place the keyword "readonly" right BEFORE a property name
+
+
+Syntax:
+
+    interface <name> {
+        readonly <property_name>?: <type>;
+        <property_name>: <type>;
+        <property_name>?: <type>;
+        ...
+    }
+
+
+

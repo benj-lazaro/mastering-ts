@@ -1,0 +1,27 @@
+Interface Methods
+-----------------
+- Two ways to implement method to an Interface
+    - Right AFTER the ":" succeeding the method name
+        - Place a pair of ()
+        - Then the fat arrow =>
+        - Lastly the return type of the method
+
+    - Right AFTER the method name
+        - Place a pair of ()
+        - Then a ":" operator
+        - Lastly the return type of the method
+
+
+Syntax:
+
+    interface <name> {
+        <property_name>: <type>;
+        ...
+        <method_name>: () => <return_type>
+    }
+
+    interface <name> {
+        <property_name>: <type>;
+        ...
+        <method_name>(): <return_type>
+    }

@@ -1,0 +1,28 @@
+Extending Interfaces 
+--------------------
+- An Interface can be extended
+    - It inherits from another Interface
+
+    - Extending an Interface
+        - It can lead to extending multiple Interfaces
+        - It is NOT LIMITED to a Single Inheritance Model
+
+
+- To implement extending an existing Interface to a new Interface
+    - After the name of the new Interface
+    - Use the keyword "extends"
+    - Followed by the name of the parent Interface to inherit from
+
+
+Syntax:
+
+    interface <name_parent> {
+        <property_name>: <type>;
+        ...
+    }
+
+    // Extend the Parent Interface into the Child Interface
+    interface <name_child> extends <name_parent> {
+        <property_name>: <type>;
+        ...
+    } 

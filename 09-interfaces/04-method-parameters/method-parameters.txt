@@ -1,0 +1,21 @@
+Interface Method Parameters
+---------------------------
+- To specify the interface method's parameter & their corresponding types 
+    - In the method's parameter list
+    - Specify the name of the parameter
+    - Then annotate the corresponding type
+
+
+Syntax:
+
+    interface <name> {
+        <property_name>: <type>;
+        ...
+        <method_name>: (<parameter_name>: <type>) => <return_type>
+    }
+
+    interface <name> {
+        <property_name>: <type>;
+        ...
+        <method_name>(<parameter_name>: <type>): <return_type>
+    }

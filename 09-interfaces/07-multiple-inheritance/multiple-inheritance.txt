@@ -1,0 +1,23 @@
+Interface Multiple Interface
+----------------------------
+- An Interface can be extended into multiple other interfaces
+    - Using the keyword "extends"
+    - Followed by other Interfaces it will inherit properties / methods from
+
+
+Syntax:
+
+    interface <name_parent_1> {
+        <property_name>: <type>;
+        ...
+    }
+
+    interface <parent_name_2>  {
+        <property_name>: <type>;
+        ...
+    } 
+
+    interface <name_child> extends <parent_name_1>, ..., <parent_name_n> {
+        <property_name>: <type>;
+        ...
+    } 

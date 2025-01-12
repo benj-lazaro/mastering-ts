@@ -1,0 +1,29 @@
+Interfaces vs Type Aliases
+--------------------------
+- Despite both being able to accomplish the same thing
+    - BUT there are key differences
+
+
+- Interface
+    - Can ONLY DESCRIBE the shape of an object
+        - Can NOT be used for anything else
+
+    - Can be re-opened after its creation
+        - To add new properties to an existing Interface
+
+    - Uses the keyword "extends"
+        - To extend and inherit an existing Interface
+
+        - To extend into a number of other Interfaces
+            - Through multiple inheritance
+
+
+Type Alias
+    - Can DESCRIBE ANY sort of type
+        - Including an object type
+
+    - Can NOT be re-opened after its creation
+        - To add new properties
+
+    - Can NOT work with the keyword "extends"
+        - Instead, it uses the intersection operator "& "

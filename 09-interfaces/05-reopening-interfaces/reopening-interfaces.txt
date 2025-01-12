@@ -1,0 +1,27 @@
+Reopening Interfaces
+--------------------
+- An Interface can be re-opened
+    - To add new properties after its creation
+        - This is unique to an Interface
+        - Type Alias does NOT OFFER this features
+
+    - Adding a new property into an Interface
+        - Does NOT OVERRIDE the existing Interface
+        - It appends the new properties into itself
+
+    - Use Case
+        - Add a property to an existing Interface of a 3rd party library
+
+
+Syntax:
+
+    interface <name_a> {
+        <property_name_1>: <type>;
+  
+    }
+
+    // The additional property gets appended into the existing interface
+    interface <name_a> {
+        <property_name_2>: <type>;
+  
+    } 

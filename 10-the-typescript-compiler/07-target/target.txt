@@ -3,6 +3,9 @@ target Option
 - The option "target"
     - Governs the output (JavaScript version) that TypeScript compiles into
 
+    - Located under "Language and Environment"
+        - Of the "tsconfig.json" file
+
     - Current default value is "es2016"
         - Documentation states the default is "es5"
         - Allowed values are listed in the documentation
@@ -10,3 +13,14 @@ target Option
 
     - NOTE: The value of "es5" 
         - Does NOT support JavaScript keyword "const" & arrow functions
+
+
+Syntax:
+
+    {
+        "compilerOptions": {
+            ...
+            "target": "es2016"
+            ...
+        }
+    }

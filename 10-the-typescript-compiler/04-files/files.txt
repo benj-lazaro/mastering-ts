@@ -1,0 +1,29 @@
+The files Compiler Option
+-------------------------
+- The "files" is a Top-Level or root option in the "tsconfig.json" file
+    - It is of the SAME LEVEL as the "compilerOptions"
+
+    - It requires a list of files stored inside a pair of [ ]
+        - Each TypeScript file is enclosed within a pair of " "        
+        - Each file is separated by a "," from each other
+
+        - This lists out MANUALLY specific files to be compiled
+            - Everything else will be IGNORED by the TypeScript compiler
+
+    - NOTE: Best used for smaller projects or group of files
+
+    - Reference: (https://www.typescriptlang.org/tsconfig/#files)
+
+
+Syntax:
+
+    {
+        "compilerOptions": {
+            ...
+        },
+        "files": [
+            "<filename>.ts",
+            "<filename>.ts",
+            ...
+        ]
+    }

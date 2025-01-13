@@ -1,0 +1,16 @@
+Working With Multiple Files
+---------------------------
+- To compile multiple TypeScript Files 
+    - All located within the same directory
+
+    - Launch the TypeScript compiler without attaching a target files
+
+        tsc
+
+    - TypeScript looks for TypeScript files (.ts) and compiles them
+
+    - Optional: launch TypeScript with the "-w" option
+
+        tsc -w
+
+    

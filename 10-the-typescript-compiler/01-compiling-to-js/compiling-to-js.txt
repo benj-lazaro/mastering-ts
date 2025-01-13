@@ -1,0 +1,16 @@
+Compiling to JavaScript
+-----------------------
+- To configure the TypeScript compiler
+    - Requires the creation of a local configuration file
+
+
+- To create a local TypeScript configuration file
+    - Execute the following command on the project folder's terminal
+
+        tsc --init
+
+
+    - Generates a local file named "tsconfig.json"
+    - The file contains the compilter's configuration settings in JSON format
+    
+

@@ -1,0 +1,21 @@
+strict Option
+-------------
+- The option "strict"
+    - Enables ALL strict type-checking options
+        - Results in stronger guarantees of program correctness
+
+    - Enabled by default
+        - Located under "Type Checking" of the "tsconfig.json" file
+
+    - Reference: (https://www.typescriptlang.org/tsconfig/#strict)
+
+
+Syntax:
+
+    {
+        "compilerOptions": {
+            ...
+            "strict": "true"
+            ...
+        }
+    }

@@ -1,0 +1,27 @@
+outdir Option
+-------------
+- It is a child of "compilerOptions"
+    - Disabled by default
+
+    - If disabled
+        - JavaScript files will be stored in the SAME DIRECTORY
+            - As the TypeScript files they were generated from
+
+    - If enabled
+        - JavaScript files will be stored in the SPECIFIED DIRECTORY
+            - Separate from the TypeScript files they were generated from
+
+        - Common convention
+            - The directory name "dist" is often used
+            - To store the compiled JavaScript file(s)
+
+    - Reference: (https://www.typescriptlang.org/tsconfig/#outDir)
+
+
+Syntax:
+
+    {
+        "compilerOptions": {
+            "outDir": "./<directory_name>"
+        }
+    }

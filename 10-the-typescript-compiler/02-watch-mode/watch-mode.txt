@@ -1,0 +1,19 @@
+Watch Mode
+----------
+- Running the TypeScript compiler with the option "-w" or "--watch"
+    - Referred as the "Watch Mode"
+
+        tsc -w <target_file>.ts
+
+        tsc --watch <target_file>.ts
+
+
+    - Launches the TypeScript in the background
+        - Watches for any changes made on the target file
+
+    - Any changes detected
+        - TypeScript compiler AUTOMATICALLY recompiles the target file
+    
+       
+- To exit the TypeScript compilter's "Watch Mode"
+    - Press CTRL + C

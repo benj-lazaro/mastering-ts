@@ -1,0 +1,58 @@
+include & exclude Options
+-------------------------
+- Both options are Top-Level options in the "tsconfig.json" file
+    - They are of the SAME LEVEL as the "compilerOptions"
+
+
+- The option "include" specifies
+    - An array of filenames or patterns to include (i.e. compile) in the program
+
+    - These filenames are resolved 
+        - Relative to the directory containing the "tsconfig.json" file
+
+    - It defaults to [] 
+        - If the option "files" is specified
+        - Otherwise, assigns "**/*" instead
+
+    - Reference: (https://www.typescriptlang.org/tsconfig/#include)
+
+
+- The option "exclude" specifies
+    - An array of filenames or patterns that should be skipped
+        - When resolving the entries in the option "include"
+
+    - It has a default value of "node_modules"
+        - Excludes ALL TypeScript files from downloaded node modules
+            - Prevents compiling dependencies
+        
+        - NOTE: Default value is IMPLICITLY REMOVED
+            - When an entry in the option "exclude" is specified
+            - Advised to MANUALLY ADD "node_modules" back again
+            
+    - Specified files can STILL BE INCLUDED due to
+        - An "import" statement
+        - A "types" inclusion
+        - A "/// <reference" directory
+        - Being specified in the option "files"
+            
+    - This is NOT a mechanism that 
+        - PREVENTS a file from being included or compiled
+        - It simply changes what the option "include" setting finds
+
+    - Reference: (https://www.typescriptlang.org/tsconfig/#exclude)
+
+
+Syntax:
+
+    {
+        "compilerOptions": {
+            ...
+        },
+        ...
+        {
+            "include": ["<directory_name>/<filename>", ...],
+            "exclude": ["<directory_name>/<filename>", ...]
+        }
+    }
+
+    

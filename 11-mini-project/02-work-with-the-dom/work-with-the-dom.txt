@@ -1,0 +1,10 @@
+Working with the DOM
+--------------------
+- The DOM's "document" is a special object in the browser
+    - In JavaScript
+        - It does NOT have a type
+
+    - In TypeScript
+        - It has the type of "Document"
+
+    

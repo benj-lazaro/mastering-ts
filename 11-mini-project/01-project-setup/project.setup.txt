@@ -1,0 +1,94 @@
+Project Setup
+-------------
+- Create a simple mini project
+    - A simple To Do list web application
+    - Using the DOM and manipulating it
+    - Working with types
+
+
+- Setup the project's directories
+    - Launch the intergrated terminal 
+
+    - Create a "tsconfig.json" file
+    
+        tsc --init
+
+
+    - Create two (2) directories "src" and "dist"   
+
+    - Move into the "src" directory
+        - Create an "index.ts" file
+    
+    - Move back up to the project's root directory
+
+
+- Reconfigure the TypeScript compiler
+    - Open the "tsconfig.json" file
+
+    - Uncomment the option "outDir"
+        - Assign the value "./dist"
+        - Save the changes
+
+    - Add the top-level option "include"
+        - Assign the value '["src"]'
+        - Save the changes
+
+
+- Create an "index.html" file
+    - Open the "index.html" file
+
+    - Use the "!" shortcut
+        - To generate the HTML boilerplate code
+
+    - Change the content of the HTML element <title>
+        - To "Mini Project"
+
+    - Inside the HTML element <body>
+        - Insert the HTML element <script>
+
+    - On the HTML element <script>
+        - Add the HTML attribute "src"
+        - Assign the value "dist/index.js"
+
+        
+- Enable the live upadate 
+    - Create a "package.json" file
+
+        npm init -y 
+
+
+    - Install the package "lite-server"
+
+        npm i lite-server
+    
+
+    - Open the "package.json" file
+        - In the section "scripts"
+
+        - Remove the entry "test"
+
+        - Replace it with a new entry named "start"
+            - Asisgn with the value "lite-server"
+
+        
+- Open two integrated terminal windows
+    - On the first terminal window
+
+        tsc -w 
+
+
+        - Monitors changes in the "index.ts" file
+        - Recompile changes into "dist/index.js" file
+
+
+    - On the second terminal window
+
+        npm start
+
+
+        - Launches the "lite-server" package
+        - Launches the default browser
+        - Loads the created "index.html"
+
+        - Reloads the "index.html" 
+            - For any detected updates on the "index.js" file

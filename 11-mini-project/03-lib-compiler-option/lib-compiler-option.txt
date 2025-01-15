@@ -1,0 +1,35 @@
+The lib Compiler Option
+-----------------------
+- By default, TypeScript knows the type definitions of the DOM
+    - All its methods for elements
+    - Element methods
+    - Events
+    - Interfaces
+
+
+- These features can be turned off for the following use cases:
+    - App will NOT run in a browser
+
+    - App runtime platform provide certain JavaScript API objects
+        - That does NOT YET support the full syntax of a given ECMAScript version
+
+    - App using polyfills or native implementations of a higher level ECMAScript version
+        - Than the one assigned in the "target" option
+
+
+- To disable
+    - Open the "tsconfig.json" file
+    
+    - Search for the option "lib"
+        - Under the section "Language and Environment"
+
+    - Uncomment the option "lib"
+        - By default, assigned with an empty []
+        - Effectively disables TypeScript's default type definitions
+
+
+- To manually add new or existing components, modules or libraries with "lib" enabled  
+    - Include the name of the corresponding high-level library or individual components
+        - As an item of the "lib" option's []
+
+    - Reference: (https://www.typescriptlang.org/tsconfig/#lib)

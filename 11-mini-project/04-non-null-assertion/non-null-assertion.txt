@@ -1,0 +1,34 @@
+TypeScript's Non-Null Assertion Operator
+----------------------------------------
+- When working with the DOM methods in an expression
+    - TypeScript assumes that the element may NOT exist at runtime
+    
+    - Thus, expects a Union type to be returned
+        - Targeted HTMLElement
+        - null
+
+    - Using along with the Optional Chaining operator "?
+        - Ignores the chained expression if a null is return
+        - It does NOT break the code
+
+
+- TypeScript has a Non-null Assertion operator "!"
+    - It ASSERTS that an expression will ALWAYS return a non-null at runtime
+
+    - When working with DOM methods
+        - It expect the return type is of HTMLElement
+        - NOT a Union type anymore (i.e. HTMLElement | null)
+
+    - It is RISKY to use
+        - TypeScript does NOT flag an error during development
+        - JavaScript flags an error at runtime
+
+    - Best use case
+        - Working with a DOM element that is EXPECTED to exist ALWAYS at runtime
+
+
+Syntax:
+
+    const <variable_name> = document.<method>()!;
+
+    const <variable_name> = <expression_that_does_NOT_return_a_null>!;

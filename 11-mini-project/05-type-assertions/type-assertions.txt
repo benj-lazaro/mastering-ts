@@ -1,0 +1,20 @@
+Type Assertions
+---------------
+- A syntax that asserts (informs) TypeScript
+    - Specific information about a targeted value's type
+        - To TENTATIVELY treat it as a different type
+
+    - It does NOT change the initial type of the targeted value
+        - It ONLY changes within the expression (context) that it is used on
+
+    - Demonstrates the concept of Type Assertions in TypeScript
+
+
+- To implement Type Assertion
+    - Append the keyword "as" as the variable storing the targeted value
+    - Followed by the specific type 
+
+
+Syntax:
+
+    let <name> = <value> as <intended_type>;

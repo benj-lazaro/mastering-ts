@@ -1,0 +1,24 @@
+Type Assertions with the DOM 
+----------------------------
+- An alternative syntax for Type Assertions
+    - Instead of using the keyword "as"
+        - Followed by the intended type
+
+    - Uses a pair of <> with the intended type in-between
+        - Followed by the targeted element or value
+
+    - NOTE: Less common in general
+        - Does NOT work with React's JSX template mark-up
+
+        - JSX "freaks out" due to the <>
+            - Being use for writing the template mark-up
+            - Requires to use fragments <>...</> to make it work
+
+        - Syntax is used when working with Generics
+
+        - Using the "as" keyword is easier to read 
+
+
+Syntax:
+
+    (<intended_type><target_element>).<method_or_propery>;

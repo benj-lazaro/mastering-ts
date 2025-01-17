@@ -1,0 +1,41 @@
+Working with Events
+-------------------
+- When working on HTMLElementForm with the method .addEventListener()
+    - To listen for a "submit" event
+
+    - It has a default behavior after a "submit" event is dectected
+        - It clears out the content of the HTMLElementInput
+        - Submits the content to (an assumed local / remote) server
+        - Then immediately refresh the HTML document
+
+
+- In order to prevent this default behavior from occurring
+    - On the callback function of the method .addEventListener()
+
+    - Declare a parameter variable
+        - This will store the event
+        
+        - TypeScript IMPLICITLY knows the variable is of "SubmitEvent"
+            - Based on the context of the given expression
+            - It is listening to a "submit" event
+            
+            - NO need to type annotate the variable parameter
+
+    - Call the method .preventDefault() on the parameter variable
+        - This prevents the default behavior
+
+        - TypeScript knows that "SubmitEvent" types
+            - Has a method .preventDefault()
+
+
+- However, moving the callback function as a separate named function
+    - Referenced by the method .addEventListener() by its name
+
+    - TypeScript IMPLICITLY type annotates the parameter variable as "any"
+        - Losing knowledge about its previous identity as a "SubmitEvent" type
+        - As well as its built-in method .preventDefault()
+
+    - Will require to EXPLICILY type annotate the parameter variable as "SubmitEvent"
+        - To help TypeScript identity the content it will be handling
+        - As well as the existence of associated built-in method(s)
+        

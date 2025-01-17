@@ -1,0 +1,11 @@
+Building The ToDo List
+----------------------
+- An HTML element <ul> with the id of "todolist"
+    - Will store the entries submitted by the HTML element <input>
+
+    - For each entry
+        - A corresponding HTML element <li> is created
+            - With the entry as content
+
+        - A checkbox alongside each entry
+        

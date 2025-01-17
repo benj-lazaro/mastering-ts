@@ -1,0 +1,33 @@
+Adding an Interface
+-------------------
+- In preparation for storing the To Do items in Local Storage
+    - Items needs to be moved from being just a HTML element <li>
+        - Into some store of data structure
+        - e.g. to do object in an array
+
+
+- To implement
+    - Create an interface named "Todo"
+        - A property "text" of type "string"
+        - A property "completed" of type "boolean"
+
+    - Declare an array of type "Todo"
+        - Initially assign an empty array
+
+    - Create a new object of type "Todo"
+        - Assign retrieved value from HTMLInputElement to property "text"
+        - Assign "false" as initial value of property "completed"
+    
+    - Push new object into the array
+
+    - Refactor code
+        - Move the HTML element rendered on a separate named function
+
+        - Call the function
+            - To create a new Todo object
+            - To render associated HTML elements
+            - BEFORE pushing the Todo object into the array
+
+
+- The array can then be stored in Local Storage
+    - As well as read from it after starting the app

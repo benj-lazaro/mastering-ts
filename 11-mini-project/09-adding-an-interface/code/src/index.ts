@@ -1,4 +1,4 @@
-// Working with Events
+// Adding an Interface
 
 // Interface for individual "To Do" items
 interface Todo {

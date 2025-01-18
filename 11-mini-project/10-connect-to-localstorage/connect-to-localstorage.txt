@@ -1,0 +1,27 @@
+Connect to localStorage
+-----------------------
+- The localStorage is a browser-based storage
+    - It ONLY stores string values
+
+    - It requires a key as a reference 
+        - To store & read string value(s)
+
+
+- To store the items of the array "todos" in localStorage
+    - Pass the array as argument value to "JSON.stringify()"
+
+    - Pass the returned value as the 2nd argument value to "localStorage.setItem()"
+        - The 1st argument value being a "key" of string value
+            - This serves as a reference where the converted array items as text
+            - Will be stored to and read from
+
+
+- To read the converted items of the array "todos" from localStorage
+    - Pass the "key" as argument value to "localStorage.getItem()"
+    - Pass the returned value as argument value to "JSON.parse()"
+
+
+- To render the item read from localStorage
+    - Call the method ".forEach" on the returned value by "JSON.parse()"
+        - Pass as argument the function "createTodo()"
+        - To render the items in the DOM

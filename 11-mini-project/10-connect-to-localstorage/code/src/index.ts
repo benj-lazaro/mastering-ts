@@ -1,6 +1,6 @@
 // Connect to localStorage
 
-// Interface for individual Todo item
+// Interface for a Todo item
 interface Todo {
   text: string;
   completed: boolean;

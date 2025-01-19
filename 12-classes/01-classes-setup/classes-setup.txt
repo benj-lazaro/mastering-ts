@@ -1,0 +1,78 @@
+Classes Setup
+-------------
+- This section focuses ONLY on JavaScript classes including
+    - Private fields
+    - Class fields
+    - Constructor functions
+    - Extends keyword
+    - Super inheritance
+
+
+- Setup a new project folder
+
+    tsc --init
+
+    npm init -y
+
+    npm i lite-server
+
+
+- Create the following directories & files
+
+    mkdir src dist
+
+    touch index.html
+
+    touch src/index.ts
+
+
+- Open the file "index.html"
+    - Populate with boilerplate code
+
+    - Change the content of the <title> element
+        - To "Classes Recap"
+
+    - Add a <script> element within the <body> element
+        - Add a HTML attribute "src"
+        - Assign the value "dist/index.js"
+    
+    - Save the changes
+
+
+- Open the file "src/index.ts"
+    - Add a test code
+
+
+- Open the file "tsconfig.json"
+    - Enable option "outDir"
+        - Assign the value "./dist"
+
+    - Add top-level option "include"
+        - Assign the value "src"
+
+    - Save the changes
+
+
+- Open the file "package.json"
+    - In the "scripts" section
+        - Delete "test"
+
+    - Replace it with "start"
+        - With the value of "lite-server"
+
+
+- Open two Integrated Terminal sessions
+    - On the 1st, run the TypeScript compiler in Watch Mode
+
+        tsc -w
+
+
+    - On the 2nd, run lite-server 
+
+        npm start
+
+
+- After the default browser loads
+    - Check the JavaScript console
+    
+    - See that the corresponding test message is displayed

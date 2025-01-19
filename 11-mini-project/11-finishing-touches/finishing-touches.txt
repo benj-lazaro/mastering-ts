@@ -1,0 +1,13 @@
+Todo List Finishing Touches
+---------------------------
+- Implementation on the ability to check off / on
+    - Each item's checkbox
+    - Save checkbox's state on localStorage
+    - Load checkbox's saved state from localStorage after reloading the DOM
+
+
+- Requires adding an event listener
+    - Listens for a "change" event on each item's checkbox
+    - Update the state of the corresponding item in localStorage
+
+    

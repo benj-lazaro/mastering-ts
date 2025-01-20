@@ -1,0 +1,34 @@
+Constructors
+------------
+- A Constructor is a method (often) defined within a Class
+    - It is defined ONLY ONCE
+
+    - It has to be named "constructor"
+
+    - It is automatically called EVERY single time
+        - A class is instantiated into an object
+
+    - It holds any form of functionality that WILL BE EXECUTED
+        - EVERY time a class is instantiated into an object
+
+        - Often accepts some arguments
+            - During instantiating a class into an object 
+
+        - Those arguments (for example) will add / assign values to the corresponding properties
+            - Properties inside a Constructor is prefixed with "this." 
+    
+
+Syntax:
+
+    class <CamelcaseName> {
+        constructor(<arg>) {
+            this.<property> = <arg>;
+            ...
+        }
+
+        <method_name>() {
+            ...
+        }
+    }
+
+    const <name> = new <class_name>(<arg_value>, ...);

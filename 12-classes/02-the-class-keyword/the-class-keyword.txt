@@ -1,0 +1,29 @@
+The class Keyword
+-----------------
+- A Class allows to create a pattern (i.e. blueprint or template) that
+    - Describes an object
+        - Including its properties and functionality (i.e. methods)
+    
+    - Then instantiate an instance (of itself... i.e. class) into an object
+
+    - A Class is NOT the same as an Interface or Type Alias
+        - These two describes the shape of an object
+        - They do NOT create or instantiate into an object
+
+
+Syntax:
+
+    class <CamelcaseName> {
+        constructor(<arg>) {
+            this.<property> = <value>;
+            ...
+        }
+
+        <method_name>() {
+            ...
+        }
+    }
+
+
+    const <name> = new <class_name>(<arg_value>, ...);
+    

@@ -1,0 +1,36 @@
+Class Fields
+------------
+- It is a JavaScript shortcut syntax (i.e. syntatic sugar)
+    - It allows to define Class properties (fields) 
+        - Outside (and preceeding) the Constructor method
+    
+    - It assigns initial "hard-coded" values to Class' properties
+        - Without prefixing each with "this."
+
+    - This syntax is NOT applicable when there is a requirement
+        - To dynamically assign initial values to properties 
+            - When instantiating the Class into an object
+
+        - Those values will come from the Constructor method's parameter list
+
+
+Syntax:
+
+    class <CamelcaseName> {
+        // Class fields / properties
+        <property> = <initial_value>;
+        ...
+
+        constructor(<arg>) {
+            // Dynamic properties
+            this.<property> = <arg>;
+            ...
+        }
+
+        <method_name>() {
+            ...
+        }
+    }
+
+    const <name> = new <class_name>(<arg_value>, ...);
+

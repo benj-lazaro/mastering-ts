@@ -1,0 +1,53 @@
+Private Fields
+--------------
+- Private Class properties (fields)
+    - It is just like any normal Class property
+        - Defined inside or outside the Constructor method
+
+    - It is prefixed with a "#"
+        - This protects the property from being accessed / updated outside of the class
+
+    - The initial value of a Private Class property
+        - Can be accessed / updated from within the Class
+
+
+- To access / update a Private Class property outside of a Class
+    - The Private property MUST be enclosed within a Class Method
+
+    - The method references the Private property by
+        - Prefixing the property with "this."
+
+    - The method then access / updates the value of a Private property
+        - Then returns the requested / updated value
+    
+
+- The same syntax can ALSO be applied when defining a Private Class method
+    - Prefixing a Class Method with "#"
+
+    - The method is ONLY accessible within the Class
+
+
+Syntax:
+
+    class <CamelcaseName> {
+        <property> = <initial_value>;
+        ...
+        #<private_property> = <initial_value>;
+
+        constructor(<arg>) {
+            this.<property> = <arg>;
+            ...
+        }
+
+        // Access value of Private property
+        <method_name>(<arg>) {
+            this.#<private_property> = <arg>
+            ...
+            return this.#<private_property>
+        }
+
+        // Private method
+        #<method_name>(<args>) {
+            ...
+        }
+    }

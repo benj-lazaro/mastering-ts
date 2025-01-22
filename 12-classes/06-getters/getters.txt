@@ -1,0 +1,29 @@
+Getters
+-------
+- It is a piece of syntatic sugar that helps
+    - Add some additional logic
+
+    - Create synthetic properties that 
+        - Looks and is called like a property
+        - It runs corresponding logic like a method
+
+
+- To implement
+    - Prefix the keyword "get"
+    - Followed by a named Class method
+
+
+Syntax:
+
+    class <CamelcaseName> {
+        <property> = <initial_value>;
+
+        constructor(<arg>) {
+            this.<property> = <arg>;
+            ...
+        }
+
+        get <name>() {
+            ...
+        }
+    }

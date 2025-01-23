@@ -25,12 +25,7 @@ Syntax:
     class <ChildClass> extends <ParentClass> {
         <child_property> = <initial_value>;
         ...
-
-        constructor(<arg>) {
-            this.<child_property> = <arg>;
-            ...
-        }
-
+        
         <method_name>() {
             ...
         } 

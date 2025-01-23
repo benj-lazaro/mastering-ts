@@ -1,0 +1,49 @@
+The Dreaded super()
+-------------------
+- The function "super()" comes into play when a Child Class
+    - Had its own Constructor Method
+
+    - It references the Parent Class' Constructor Method
+        - Then adds new properties defined on its OWN Constructor Method
+
+    - When extend a Parent Class to  Child Class without its OWN Constructor Method
+        - JavaScript implicitly calls the Constructor Method of the Parent Class
+
+
+- To implement
+    - Calls the function super() within the Child Class' Cosntructor Method
+        - On the line before referencing its own properties
+
+
+Syntax:
+
+    class <ParentClass> {
+        constructor(<arg>) {
+            this.<property> = <arg>;
+            ...
+        }
+
+        <property_name> = <initial_value>;
+        ...
+
+        <method_name>() {
+            ...
+        }
+
+    }
+
+
+    class <ChildClass> extends <ParentClass> {
+        constructor(<arg>) {
+            super();
+            this.<property> = <arg>;
+            ...
+        }
+
+        <child_property> = <initial_value>;
+        ...
+        
+        <method_name>() {
+            ...
+        } 
+    }

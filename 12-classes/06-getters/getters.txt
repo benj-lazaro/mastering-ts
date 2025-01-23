@@ -1,16 +1,20 @@
 Getters
 -------
-- It is a piece of syntatic sugar that helps
-    - Add some additional logic
+- It is a piece of syntatic sugar that
+    - Creates a synthetic property in a Class
+    
+    - It behaves and is called like a normal property
+    
+    - It can add some additional logic into it
+    
+    - Executes like a method without the pair of ()
+        - Whose function to is return (get) a value of a property
+        - Quite useful for returning the stored value in a Private Property (Field)
+            
 
-    - Create synthetic properties that 
-        - Looks and is called like a property
-        - It runs corresponding logic like a method
-
-
-- To implement
-    - Prefix the keyword "get"
-    - Followed by a named Class method
+- To implement a Getter
+    - Define a normal Class Method
+    - Prefix the name of the method with the keyword "get"
 
 
 Syntax:

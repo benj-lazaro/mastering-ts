@@ -1,0 +1,37 @@
+Extending Classes
+-----------------
+- The keyword "extends" informs JavaScript to
+    - Inherit the properites and/or methods of a Parent Class (i.e. Base Class)
+
+
+Syntax:
+
+    class <ParentClass> {
+        <property_name> = <initial_value>;
+        ...
+
+        constructor(<arg>) {
+            this.<property> = <arg>;
+            ...
+        }
+
+        <method_name>() {
+            ...
+        }
+
+    }
+
+
+    class <ChildClass> extends <ParentClass> {
+        <child_property> = <initial_value>;
+        ...
+
+        constructor(<arg>) {
+            this.<child_property> = <arg>;
+            ...
+        }
+
+        <method_name>() {
+            ...
+        } 
+    }

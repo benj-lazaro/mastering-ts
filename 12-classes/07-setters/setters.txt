@@ -1,0 +1,37 @@
+Setters
+-------
+- It is a piece of syntatic sugar that
+    - Creates a synthetic property in a Class
+    
+    - It behaves and is called like a normal property
+    
+    - It can add some additional logic into it
+    
+    - Executes like a method without the pair of ()
+        - Whose function is to access and set a new value to a property
+        
+        - Offers the ability to intercept & verify 
+            - The new value prior to assigning to a property
+
+        - Quite useful for updating the stored value in a Private Property (Field)
+
+
+- To implement a Getter
+    - Define a normal Class Method
+    - Prefix the name of the method with the keyword "set"
+
+
+Syntax:
+
+    class <CamelcaseName> {
+        <property> = <initial_value>;
+
+        constructor(<arg>) {
+            this.<property> = <arg>;
+            ...
+        }
+
+        set <name>() {
+            ...
+        }
+    }

@@ -1,0 +1,40 @@
+Static Properties & Methods
+---------------------------
+- The prefix keyword "static" informs JavaScript that
+    - A Property or Method EXIST ONLY inside a Class
+    - Will NOT EXIST on each individual instance (i.e. object)
+
+    - NOTE: Accessing a Static Property in an instance
+        - Returns the value "undefined"
+
+
+- A Static Method is used to define (and group)
+    - Functionalities that has NOTHING to do with an instance
+
+    - Common use case
+        - A helper function that creates new new (or multiple) instance(s)
+        
+    - It is called using the syntax:
+        
+        <class_name>.<static_method_name>()
+
+
+Syntax:
+
+    class <CamelcaseName> {
+        <property_name> = <initial_value>;
+        static <property_name> = <initial_value>;
+
+        constructor(<arg>) {
+            this.<property> = <arg>;
+            ...
+        }
+
+        <method_name>() {
+            ...
+        }
+
+        static <method_name>() {
+            ...
+        }
+    }

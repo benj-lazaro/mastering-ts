@@ -1,2 +1,20 @@
 Annotating Classes in TypeScript
 --------------------------------
+- Class in TypeScript is similar to JavaScript EXCEPT
+    - It requires for the following to be typed
+        - Class Property
+        - Parameter(s) in the Constructor Method
+
+
+Syntax:
+
+    class <name> {
+        <property_name>: <type>;
+        ...
+
+        constructor(<paramter>: <type>) {
+            this.<property> = <paramter>;
+            ...
+        }
+
+    }

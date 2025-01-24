@@ -1,0 +1,23 @@
+Class Fields in TypeScript
+--------------------------
+- TypeScript can INFER the type of a Class Property (Field)
+    - Based on the assigned initial value
+        
+    - Unless the initial value is of Union Type
+        - Then EXPLICIT typing is required
+
+    - NOTE: EXPLICIT Type Annotation is a good practice
+        - For readability purposes
+
+Syntax:
+
+    class <name> {
+        <property_name>: <type>;
+        ...
+
+        constructor(<paramter>: <type>) {
+            this.<property> = <paramter>;
+            ...
+        }
+
+    }

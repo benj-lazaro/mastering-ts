@@ -1,0 +1,25 @@
+readonly Class Properties
+-------------------------
+- The prefix "readonly" modifier on a Class Property
+    - Prevents the assigned value from being overriden
+
+    - TypeScript immediately flags an error
+        - When an attempt is made to assign a new value
+
+    - This modifier is UNIQUE to TypeScript
+
+
+Syntax:
+
+    class <name> {
+        readonly <property_name>: <type>;
+        ...
+        <property_name>: <type>;
+        ...
+
+        constructor(<paramter>: <type>) {
+            this.<property> = <paramter>;
+            ...
+        }
+
+    }

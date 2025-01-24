@@ -1,0 +1,29 @@
+The public Modifier
+-------------------
+- The prefix "public" modifier on a Class Property
+    - Every Property and Method of a Class is IMPLICITLY "public" by default
+
+    - This meant that they can be ACCESSED (read) from outside the class
+
+    - This is implemented ONLY for readability to
+        - EXPLICITLY indicate w/c Class members are "public"
+        
+        - Make it clear for other developers that
+            - The value on said property is accessible & changeable
+
+    - This modifier is UNIQUE to TypeScript
+
+
+Syntax:
+
+    class <name> {
+        <property_name>: <type>;
+        public <property_name>: <type>;
+        ...
+
+        constructor(<paramter>: <type>) {
+            this.<property> = <paramter>;
+            ...
+        }
+
+    }

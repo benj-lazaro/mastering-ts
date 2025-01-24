@@ -1,0 +1,37 @@
+The private Modifier
+--------------------
+- The prefix "private" modifier on a Class Property
+    - Informs TypeScript that a property and/or method
+        - Is ONLY ACCESSIBLE within the Class itself
+        - Is NOT ACCESSIBLE outside the Class (i.e. object)
+
+    - This modifier is UNIQUE to TypeScript 
+        - JavaScript has its own "private" modifier using "#"
+
+        - TypeScript can recognize the JavaScript prefix "#"
+            - If the compiler option "target" is set to "ES2015" or higher
+
+        - JavaScript prefix "#" also has the ADVANTAGE of
+            - Persisting into the "transpiled" JavaScript code and at runtume
+            - The modifier "private" is effective ONLY when coding in TypeScript
+
+    - It is a matter of preference on whether to use either "#" or "private"
+        
+  
+  Syntax:
+
+    class <name> {
+        <property_name>: <type>;
+        private <property_name>: <type>;
+        ...
+
+        constructor(<paramter>: <type>) {
+            this.<property> = <paramter>;
+            ...
+        }
+
+        private <method_name>() {
+            ...
+        }
+
+    }

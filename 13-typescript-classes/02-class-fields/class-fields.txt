@@ -9,6 +9,7 @@ Class Fields in TypeScript
     - NOTE: EXPLICIT Type Annotation is a good practice
         - For readability purposes
 
+
 Syntax:
 
     class <name> {

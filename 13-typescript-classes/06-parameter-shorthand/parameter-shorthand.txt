@@ -1,0 +1,31 @@
+Parameter Properties Shorthand 
+------------------------------
+- It is a TypeScript shorthand or helper that
+    - Declares "dynamic" Class properties as part of the Constructor Method's parameter list
+
+    - This removes the need to
+        - Declare Class properties
+        - Redeclare Class properties on the Constructor Method's parameter list
+        - Inside the Constructor Method
+            - Pass the parameter values to the corresponding properties
+            - Properties referenced with the prefix "this."
+
+    - However, this ONLY APPLIES to properties that are dynamic
+        - Class properties that uses the Constructor Method 
+            - To fetch and assign the initial values to the corresponding properties
+
+        - Class properties with hard-coded initial values does NOT APPLY here
+ 
+
+Syntax:
+
+    class <name> {
+        <property_name>: <type> = <hard-coded_initial_value>;
+
+        constructor([public | private] <property_name>: <type>, ...) {}
+
+        private <method_name>() {
+            ...
+        }
+
+    }

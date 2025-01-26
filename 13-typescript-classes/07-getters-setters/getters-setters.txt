@@ -1,0 +1,37 @@
+Getters and Setters
+-------------------
+- It is similar to that of JavaScript's implementation wherein
+    - Accessed like a Class Property (i.e. NO pair of () )
+    - Executes like a Class Method
+
+    - On Getters
+        - TypeScript allows to EXPLICITLY annotate the return value's type
+
+    - On Setters
+        - TypeScript does NOT allow Type Annotation on the return value
+
+    - Class Methods with no prefix keyword "set" (only "get")
+        - TypeScript considers them as a READ-ONLY property
+        - Flags an error when attempting to assign a new value 
+
+
+Syntax:
+
+    class <name> {
+        <property_name>: <type> = <hard-coded_initial_value>;
+
+        constructor([public | private] <property_name>: <type>, ...) {}
+
+        <method_name>() {
+            ...
+        }
+
+        get <method_name>(): <type> {
+            ...
+        }
+
+        set <method_name>() {
+            ...
+        }
+
+    }

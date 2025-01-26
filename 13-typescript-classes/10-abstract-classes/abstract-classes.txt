@@ -1,0 +1,44 @@
+Creating Abstract Classes
+-------------------------
+- Placing the prefix keyword "abstract" on a Class
+    - Instructs TypeScript that the targeted Class can NOT be instantiated
+
+
+- An Abstract Class defines a pattern where the
+    - Properites in the Constructor Method using the Parameter Properties shorthand
+    - Methods with "abstract" prefix
+    - Both MUST be implemented in a Child Class
+
+
+- Abstract Class while similar to an Interface
+    - The former offers additional functionality (i.e. abstract method)
+    - The latter does NOT
+
+    - NOTE: It is possible for a Child Class to concurrently
+        - Extend an Abstract Class
+        - Implement an Interface
+
+
+Syntax:
+
+    abstract class <name> {
+        constructor(<property>: <type>, <property>: <type>, ...) {}
+
+        abstract <method>(): <type> {
+            ...
+        }
+
+        <method>(): <type> {
+            ...
+        }
+    }
+
+    class <name> extends <abstract_class> [implements <interface_name>] {
+        constructor(<property>: <type>, <property>: <type>, ...) {
+            super(<parent_property>, ...);
+        }
+
+        <abstract_method>(): <type> {
+            ...
+        }
+    }

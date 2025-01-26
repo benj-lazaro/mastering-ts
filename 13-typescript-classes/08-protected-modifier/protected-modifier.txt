@@ -1,0 +1,43 @@
+The protected Modifier
+----------------------
+- The prefix "protected" modifier on a Parent Class Property 
+    - Informs TypeScript that a property is ACCESSIBLE ONLY
+        - To the Class where it was defined in
+        - And to any classes that inherit from that class
+
+    - This modifier is UNIQUE to TypeScript 
+
+
+- Summary on Class Modifiers
+    - public
+        - Available anywhere (default)
+
+    - private
+        - Available ONLY to the exact Class it is defined in
+
+    - protected
+        - Available ONLY to the exact Class it is defined in
+        - And on any classes (i.e. Child Class) that inherit from the Class
+        
+
+Syntax:
+
+    class <parent_name> {
+        <property_name>: <type> = <hard-coded_initial_value>;
+
+        constructor(protected <property_name>: <type>, ...) {}
+
+        <method_name>() {
+            ...
+        }
+
+    }
+
+    class <child_name> extends <parent_name> {
+        <property_name>: <type> = <hard-coded_initial_value>;
+
+        <method_name>() {
+            this.<protected_property> = <new_value>;
+        }
+
+    }    

@@ -1,0 +1,45 @@
+Classes and Interfaces
+----------------------
+- An Interface describes the shape of an object
+    - Be that be an object literal or even a Class
+
+    - Implementing an Interface on a Class, sets the rule (signature) that
+        - Properties / Methods defined in the Interface
+        - MUST be required in the Class
+
+
+- To implement
+    - Define an Interface
+        - Set property and type
+        - Set method and return type
+
+    - Define a Class
+        - Use the keyword "implements"
+        - Followed by the name of an Interface
+
+    - On the Class' Construtor Method
+        - Use Parameter Properties 
+        
+        - Declare the Interface's property
+            - Include the modifier, name & type
+    
+
+Syntax:
+
+    interface <name> {
+        <property>: <type>;
+    }
+
+    interface <name> {
+        <method>(): <return_type>;
+    }
+
+    class <name> implements <interface>, <interface>, ... {
+
+        constructor([<modifier>] <interface_property_name>: <type>, ...) {}
+
+        <interface_method>() {
+            ...
+        }
+
+    }

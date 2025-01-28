@@ -1,0 +1,22 @@
+Another Example of a Built-In Generic
+-------------------------------------
+- Another built-in Generic is the "document.queryselector()"
+    - A method that accepts a type of "<keyof HTMLElementTagNameMap>"
+        - The argument comes in the form of a CSS styled Selector
+
+    - It returns a value that is either an "Element" or null
+        - Element is the MOST basic of object
+
+    - To assert a specific type to the method ".queryselector()"
+        - Place the specific type in a pair of <>
+        - Position in-between the method and its pair of ()
+        - Returns the specific type (instead of an Element) or null 
+
+    - Use the Non-null Assertion operator "!"
+        - To inform TypeScript that a non-null value is guaranteed
+
+
+Syntax:
+
+    const <name> = document.queryselector<specific_type>()!;
+    

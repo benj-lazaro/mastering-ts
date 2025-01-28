@@ -1,27 +1,32 @@
 Introducing Generics
 --------------------
-- Generic is a special feature that allows
-    - To define a reusable class or function that 
+- Generics are a special feature that allows
+    - To define a reusable class or function that
         - Can work with multiple types
-        - These are NOT Union Types
+        
+        - NOTE: These are NOT Union Types
+            - Since they are NOT hard-coded
 
-    - It can accept any type
-        - Then return the same type
+    - Wherein it can accept any type then
+        - Return the same type
 
 
-- A built-in Generic representative is the array's alternative syntax
-    - It uses the interface "Array"
-        - Followed by the type of the elements enclosed within <>
+- A built-in Generic representative would be the Array's alternative syntax
+    - Calls the interface "Array"
+
+    - Followed by the type of its stored elements
+        - Enclosed within a pair of <>
         - e.g. Array<number>, Array<string>, Array<boolean>
 
-    - Hovering the mouse pointer over "Array"
-        - VS Code shows the syntax
-        
+    - In VS Code, hovering the mouse point over "Array"
+        - Displays the text
+
             interface Array<T>
 
-        - The "T" represents a generic type 
+        - The "T" represents a Generic Type
+            - It represents the type that will be passed on its place
 
-
-    - The interface "Array" is written in a generic way that 
-        - It accepts any sort of type
-        - It stores (or returns) elements based on the given type
+    - This demonstrates how the interface "Array"
+        - Is written in a generic way wherein
+        - It accepts any type (as input)
+        - It stores the elements (in return) based on the given type

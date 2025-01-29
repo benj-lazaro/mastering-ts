@@ -1,0 +1,33 @@
+Writing Our First Generic
+-------------------------
+- A function with an argument annotated as type "any" 
+    - Accepts an argument value of any type
+
+    - Returns any type
+        - Even if does NOT match with the input type
+
+
+- A Generic function accepts any type (NOT annotated as type "any")
+    - Represented as the generic parameter "T" (popular convention) or "Type" 
+        - Enclosed within a pair of <> 
+        - Inserted in-between the function name & the pair of ()
+    
+        - The parameter is annotated as type "T" or "Type"
+
+        - The return value is annotated as type "T" or "Type"
+
+    - It establishes the relationship of
+        - Whatever the type of the argument value (input) is
+        - That type will be return type (output)
+
+
+Syntax:
+
+    function <name><T>(<parameter>: T): T {
+
+    }
+
+
+    function <name><Type>(<parameter>: Type): Type {
+
+    }

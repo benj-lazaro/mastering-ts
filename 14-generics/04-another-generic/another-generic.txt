@@ -1,0 +1,5 @@
+Writing Another Generic Function
+--------------------------------
+- Write another simple Generic function
+    - To familiarize on the concept & implementation of Generics
+

@@ -1,0 +1,24 @@
+Inferred Generic Type Parameters
+--------------------------------
+- TypeScript can infer the type of a Generic function's parameters
+    - When CALLING the Generic function
+
+        <function_name>(<arg>);
+
+        - Instead of
+
+        <function_name><explicit_type>(<arg>);
+
+
+    - HOWEVER, this is NOT always the case with every Generic function
+        - There are use cases that require to provide the Type Parameter 
+            - e.g. document.querySelector();
+            - TypeScript is unable to know what type of DOM element or object ahead of time
+
+            - TypeScript will require an explicit Type Parameter to determine the specific DOM element
+            - e.g. document.querySelector<HTMLButtonElement>(".btn");
+        
+        - The Generic function in the given example
+            - Provides a specific relationship between the Type Parameter and its return value
+            - TypeScript is able to figure out the relationship between the two
+            - It is able to infer the Type Parameter without explicitly declaring when calling the function

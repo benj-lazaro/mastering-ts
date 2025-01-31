@@ -1,0 +1,28 @@
+Generics, Arrow Functions & TSX Files
+--------------------------------------
+- A quirk on the Generic syntax when working 
+    - With React and implmenting an Arrow function in a .tsx file ONLY
+    
+    - NOTE: .tsx file = a JSX file with TypeScript enabled
+
+
+- Implementing a Generic using the Arrow function syntax in a .tsx file
+    - TypeScript get confused with the <T> 
+        - The one prior to the function's parameter list
+
+    - It perceives it as a JSX (HTML) tag
+        - Flags an error
+
+    - To address this concern
+        - Add a trailing comma "," right after the "T"
+
+
+- Implementing a Generic using the Arrow function syntax in a .ts file
+    - TypeScript does NOT get confused
+
+
+Syntax:
+
+    const <function_name> = <T,>(<parameter>: T): <T> => {
+        ...
+    }

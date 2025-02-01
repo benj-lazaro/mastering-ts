@@ -1,0 +1,19 @@
+Generics With Multiple Types
+----------------------------
+- To implement a Generic function with more than one (1) type parameter
+    - Declare the type of each parameter
+        - Enclosed within a pair of <>
+        - Each type is separated by a comma ","
+        
+    - TypeScript will infer the type of the return value
+        - An intersection between the Type of the first and suceeding parameter
+
+    - NOTE: Common convention is to use letters suceeding "T"
+        - e.g. "U" and so on (hopefully NOT more than that)       
+
+
+Syntax:
+
+    function <name><T, U, ...>(<parameter>: T, <parameter>: U, ...) {
+        ...
+    }

@@ -1,0 +1,20 @@
+Adding Type Constraints
+-----------------------
+- A Generic function can accept multiple Types
+    - It can accept any Type indiscriminently c/o "T" (and subsequently letters)
+    - It is unable to constraint the Type Parameter to a specific Generic Type
+
+
+- To implement Type Constraints on the Type Parameter of a Generic function
+    - Use the keyword "extends"
+    - Followed by the targeted type (e.g. object, interface, etc)
+
+    - TypeScript flags an error 
+        - When passing a value that does NOT conform to the declared Type constraints
+
+
+Syntax:
+
+    function <name><T extends <type>, U extends <type>, ...>(<parameter>: T, <parameter>: U, ...) {
+        ...
+    }

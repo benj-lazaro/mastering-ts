@@ -1,0 +1,31 @@
+Writing Generic Classes
+-----------------------
+- To implement a Generic Class
+    - The concept behind is similar to that of a Generic Function
+
+    - Explicitly declared <T> after the class name
+
+    - When instantiating the Class into an object
+        - Explicitly pass the type enclosed in a pair of <>
+        - In-between the class name and pair of ()
+
+
+
+
+Syntax:
+
+  class <name><T> {
+    <property_name>: <type>;
+    ...
+
+    <method_name>(<parameter>: T) {
+        this.<property_name> = <initial_value>;
+        ...
+    }
+  }
+
+
+  // Instantiating Class into an object
+  const <object_name> = new <class_name><type>();
+  
+  object_name.<method>();

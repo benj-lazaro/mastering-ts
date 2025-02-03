@@ -1,0 +1,20 @@
+Default Type Parameters
+-----------------------
+- When NOT providing a Type Paramter to a Generic Function when called
+    - TypeScript implicitly assigns the type of "unknown"
+        
+    - To address this concern
+        - Implement a default Type for the Type Parameter
+
+
+- To implement a default Type for a Generic Function's Type Parameter
+    - Inside the <T>
+    - Append the operator "="
+    - Followed by the default type (e.g. string, number, etc.)
+
+
+Syntax:
+
+    function <name><T = <default_type>>(<paramter>: T): T {
+        ...
+    }

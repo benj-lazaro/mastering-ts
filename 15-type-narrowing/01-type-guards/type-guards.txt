@@ -1,0 +1,21 @@
+Typeof Guards
+-------------
+- Type narrowing refers to the common situation of dealing with less precise Type (e.g. Union Type)
+    - Narrowing the Type down to a more precise Type (e.g. Primitive Type)
+
+    - Often implemented when writing a function that
+        - Behaves according to the passed argument value
+
+    - Easiest way to implement Type narrowing is through the user of the "TypeOf Guard"
+        - It performs type checking on a value BEFORE working with it
+        
+        - Basically a fancy phrase for employing the
+            - Keyword "Typeof" on a value in a conditional statement
+
+        - Based on the returned Type by the "TypeOf Guard"
+            - TypeScript will then infers the Type to the value      
+        
+
+Syntax:
+
+    typeof <operand>

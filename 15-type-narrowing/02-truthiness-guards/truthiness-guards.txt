@@ -1,0 +1,30 @@
+Truthiness Guard
+----------------
+- Truthiness Type Guards
+    - Checks the value for being truthy or falsy BEFORE working with it
+
+    - Helps avoid errors when a value MIGHT be of type "null" or "undefined"
+        - Implmented as a form of Type Guard
+
+    - Employs the "!" operator on a value (or operand) in a conditional statement
+        - Evaluates to true if the value is falsy
+        - Otherwise, evaluates to false
+
+    - Common use case
+        - Dealing with a value that could either be a non-null or null (or undefined) value
+    
+
+Syntax:
+
+    // In a conditional statement
+    if (!<value>) {
+        ...
+    } else {
+        ...
+    }
+
+
+    // In an arrow function
+    const <name> = (<value>?: <primitive_value>) {
+        ...
+    }

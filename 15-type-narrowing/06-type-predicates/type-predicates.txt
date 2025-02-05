@@ -1,0 +1,17 @@
+Working With Type Predicates
+----------------------------
+- A TypeScript feature that allows to write a custom function
+    - That can narrow the type of a value
+    
+    - This function returns a special return type called "Type Predicate"
+
+    - This return type takes the form of:
+
+        <parameter_name> is <type>
+
+
+Syntax:
+
+    function <name>(<paramter>: <type_1> | <type_2>): <parameter> is <type_1> {
+        ...
+    }

@@ -1,0 +1,22 @@
+Equality Narrowing
+------------------
+- The Equality Type Guard involves
+    - Comparing Types to each other BEFORE performing operations with values
+
+
+- It employs the operator "===" or "!=="
+    - To ensure that both values are the same or NOT
+        - Effectively narrowing towards a specific Type
+        - BEFORE working with them in a Type-specific way
+
+
+Syntax:
+
+    // In a conditional statement
+    if (<value_1> === <value_2>) {
+        // Perform tasks if values are EQUAL
+        ...
+    } else {
+        // Perform tasks if values are NOT EQUAL
+        ...
+    }

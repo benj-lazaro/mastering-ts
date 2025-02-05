@@ -1,0 +1,21 @@
+instanceof Narrowing
+--------------------
+- The JavaScript operator "instanceof" checks if an object
+    - Is an instance of a Class or Constructor function at runtime
+    - Is an instance of another (e.g. prototype chain)
+
+    - It used in narrowing the Type when working with classes
+        - As well with Arrays, Date
+        - Anything that can be instantiated using the keyword "new"
+        
+    - It is NOT going to do anything for Interfacs and Type Aliases
+        - As they do NOT exists in JavaScript
+
+
+Syntax:
+
+    if (<object> instanceof <class>) {
+        ...
+    } else {
+        ...
+    }

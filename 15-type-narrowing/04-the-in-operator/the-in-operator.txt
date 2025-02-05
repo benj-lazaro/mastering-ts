@@ -1,0 +1,17 @@
+Narrowing With The in Operator
+------------------------------
+- The "in" operator
+    - Checks if a certain property EXISTS in an object
+
+    - It is used to check if a value EXISTS in an object
+        - According to its Type Alias
+        - BEFORE working with it
+
+
+Syntax:
+
+    if (<property_name> in <object_name>) {
+        ...
+    } else {
+        ...
+    }

@@ -1,0 +1,12 @@
+Discriminated Unions
+--------------------
+- A common pattern in TypeScript that involves
+    - A literal property (i.e. discriminant) that is common across multiple Types
+        - Assign a Literal Type value to the discriminant
+        - Then use the discriminant to narrow down the Type
+
+    - Refers to custom Types that
+        - Share a common property
+        - The property will be a Literal Type (value)
+
+

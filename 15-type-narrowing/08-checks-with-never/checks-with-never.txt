@@ -1,0 +1,30 @@
+Exhaustiveness Checks With never
+--------------------------------
+- Exhaustiveness checks or using the Type "never"
+    - Ensures all possible options have been exhausted when narrowing down a Type
+
+    - Type "never" is assignable to every Type
+        - BUT NO other type is assignable to Type "never"
+
+    - TypeScript flags an error
+        - Whenever a Type is assigned to a variable of Type "never"
+    
+    - Common use case
+        - In a case statement's "default" branch
+            - Declare a variable to be of type "never"
+            - Then will assign a value to the said variable
+        
+            - TypeScript will flag an error whenever this branch is reached
+            - It meant that NOT all expected checks / operations have been handled
+
+
+Syntax:
+
+    switch(<parameter>) {
+        case <value>:
+            ...
+        case <value>:
+            ...
+        default:
+            const _<name>: never = <parameter>;
+    }

@@ -1,0 +1,37 @@
+Using 3rd Party Libraries: Axios
+--------------------------------
+- A commonly used 3rd party library is the Axios
+    - It is a simple promise-based HTTP client for the browser & node.js
+        - GitHub repository (https://github.com/axios/axios)
+        - NPM package (https://www.npmjs.com/package/axios)
+        - Website (https://axios-http.com)
+
+
+- Section project preparations
+    - Open the file "tsconfig.json"
+    
+    - Uncomment compiler option "outDir"
+        - Assign the value "./dist"
+
+    - Add the top-level option "include"
+        - Assign the value '["src"]'
+
+    - Save the changes
+
+
+- Install Axios on terminal using npm:
+
+    npm init -y
+
+    npm i axios
+
+
+- The goal of the project is to make a HTTP request 
+    - To an endpoint of a remote API server using Axios in TypeScript
+
+    - Target API server is {JSON} Placeholder
+        - Website (https://jsonplaceholder.typicode.com/)
+
+    - Some 3rd party libraries come with their own TypeScript Declaration files
+        - The Type Declaration file of the Axios library is "index.d.ts"
+        - It is locally stored at "node_modules/axios/"

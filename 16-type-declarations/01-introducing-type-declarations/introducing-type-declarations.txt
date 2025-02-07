@@ -1,0 +1,22 @@
+Introducing Type Declarations
+-----------------------------
+- Type declaration files are special files in TypeScript
+    - Ends with file extension ".d.ts"
+    
+    - These are referred as "declaration files"
+    
+    - These files ONLY contain Type information or declarations of Types
+        - They contain NO code, NO implementation details (i.e. logic)
+        - They do NOT produce any ".js" outputs
+        - They are ONLY used for type checking
+
+    - TypeScript looks at this file
+        - To understand & enforce Type rules on the code
+
+        - The actual code is written & saved in a ".ts" file
+            - That will be converted & executed as ".js" file
+
+        - The ".d.ts" file contains impoertant Type information
+
+    - This section focuses on 
+        - Working with 3rd party Javascript libraries

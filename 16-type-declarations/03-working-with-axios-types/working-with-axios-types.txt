@@ -1,0 +1,32 @@
+Working With Axios Types
+------------------------
+- To implement a basic HTTP request 
+    - To a remote API endpoint using Axios
+    - Using the method ".get()"
+    - Target URL (https://jsonplaceholder.typicode.com/users/1)
+
+
+- Use the Axios method ".get()"
+    - Requires passing the URL as a string value
+        - It is expected to return a promise
+
+        - The parsed JSON from the remote API server
+            - Is located in "res.data"
+
+    - Then chain the method ".then()"
+        - Pass an anonymous arrow function as argument
+            
+        - The function will display a message on the console
+            - If the request has been successful
+        
+    - Afterwhich chain the method ".error()"
+        - Pass an anonymous arrow function as argument
+
+        - The function will display a message on the console
+            - If the request failed
+
+
+- The ".get()" can be type annotated with a custom Type
+    - TypeScript can flag an error before runtime when
+        - Accessing a property that is NOT part of the custom Type
+

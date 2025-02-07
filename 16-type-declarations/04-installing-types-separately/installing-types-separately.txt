@@ -1,0 +1,66 @@
+Installing Types Separately
+---------------------------
+- Working with 3rd party library that
+    - Does NOT have its own Type Declaration file
+
+    - Lodash
+        - A library that comes with a bunch of tools
+        - Website (https://lodash.com/)
+
+
+- To install Lodash via npm
+
+    npm i lodash
+
+
+- Import the Lodash library in the "index.ts" file
+
+    import _ from "lodash";
+
+
+    - NOTE: TypeScript flags an error
+        - Due to being unable to fnd the corresponding declaration file
+        - Lodash does NOT have its own declaration type file
+
+    - To address this concern
+        - Manually install the corresponding Type Declaration file
+            - This is applicable to popular 3rd party libraries 
+
+        - TypeScript requires NO tools apart from npm
+
+            npm i --save-dev @types/<library_package>
+
+            npm i --save-dev @types/lodash
+
+
+        - In the project's "package.json"
+            - The filed "devDependencies" is updated
+            
+            - NOTE: Needed ONLY during development
+                - NOT needed for production / deployment
+
+
+        - NOTE: TypeScript documentation on consuming Type Declarations
+            - Reference (https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html)
+
+
+
+        - NOTE: The "@types" references the "DefinitelyTyped" project
+            - A repository of high quality TypeScript Type definitions
+                - Of popular JavaScript libraries
+
+            - GitHub Repository (https://github.com/DefinitelyTyped/DefinitelyTyped)
+
+
+
+- To search for Type Declarations
+    - For 3rd-party JavaScript libraries that does NOT have its own
+
+    - Go to the Yarn website (https://yarnpkg.com/)
+        - Type the name of the library or package
+
+        - Returns a list (or cards) of matching hits
+
+        - Clicking the corresponding library
+            - Displays the corresponding "@types/<library_package>" command
+            

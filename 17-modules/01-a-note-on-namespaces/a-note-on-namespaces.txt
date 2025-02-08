@@ -1,0 +1,28 @@
+A Note On Namespaces
+--------------------
+- TypeScript support modules to share code between files
+    - Allows to control the output it generates
+        - commonJS
+        - ES Module standard / syntax
+
+
+- TypeScript namespaces
+    - It is a module format of TypeScript that pre-dates the ES Modules standard
+        - Used for organizing code
+        - NOTE: This is less commonly used nowadays
+
+    - This syntax has a lot of useful features
+        - For creating complex definition files
+        - Still sees active use in "DefinitelyTyped" 
+            - The GitHub repository of Type Declaration for different popular JavaScript libraries
+
+    - While NOT deprecated
+        - The majority of the features in namespaces exists in ES Modules
+        - It is RECOMMENDED to use THAT (i.e. ES Modules) to align with JavaScript's direction
+    
+    - References 
+        - (https://www.typescriptlang.org/docs/handbook/2/modules.html#typescript-namespaces)
+        - (https://www.typescriptlang.org/docs/handbook/namespaces.html)
+
+    
+

@@ -1,0 +1,26 @@
+Using TypeScript Modules
+------------------------
+- Importing and exporting modules in TypeScript
+    - Using the keyword "export" on external functions
+        - Declared on a separate file
+    
+    - Triggers TypeScript to switch into "Module Mode" 
+        - From a shared global-scope
+        - Wherein each file is treated as its own file & namespace
+
+    - Requiring to manually import external functions
+        - Into the file calling the functions
+
+
+Syntax:
+
+    // Exporting external functions
+    export function <name>() {
+        ...
+    }
+
+    // Importing external function into the main program
+    import {<function_name>, ...} from "./<directory_path>/<file>.js";
+
+    const <variable> = <function_name>();
+    ...

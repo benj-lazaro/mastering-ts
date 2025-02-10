@@ -1,0 +1,26 @@
+Working Without Modules
+-----------------------
+- A demonstration of working without using ES Modules
+
+
+- TypeScript does NOT flag an error when
+    - Working with functions on a separate external file during development
+
+
+- At run-time however JavaScript flags an error
+    - Triggers a ReferenceError due to functions NOT defined
+        
+    - JavaScript specification declares any JavaScript file
+        - WITHOUT an "export" or top-level "await"
+            - Should be considered a script and NOT a module
+
+        - Inside a script, file variables & types are declared
+            - To be in a shared global-scope
+
+        - It assumes that the compiler option "outDir" will be used
+            - To join multiple input files into one output file
+                - Or use multiple <script> tags in a HTML document
+                - To load the files in the correct order
+
+        - Reference (https://www.typescriptlang.org/docs/handbook/2/modules.html#non-modules)
+    

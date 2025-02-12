@@ -1,0 +1,35 @@
+Changing Compilation Module System
+----------------------------------
+- JavaScript in the browser does NOT know about commonJS modules & syntax
+    - It does NOT know about the 
+        - keyword "export" & __esModule
+        - function require()
+
+    - Despite it worked when running in Node.js 
+        - Due to the different ecosystems between
+            - Browser JavaScript
+            - Node JavaScript
+
+    - The output rendered by TypeScript is NOT browser-friendly
+
+
+- To address this concern
+    - Inform TypeScript to preserve the imports & exports
+        - To use the ES6 module syntax
+        - In the rendered JavaScript code
+
+    - Open the file "tsconfig.json"
+        - Look for the settings "module"
+            - By default, it is set to "commonjs"
+        
+        - Change the assigned value from "commonjs" to "ES6"
+
+        - Save the changes
+    
+    - On the HTML document's <script> element
+        - Add the attribute "type"
+        - Assign the value of "module"
+        - Save the changes
+
+    - NOTE: Ensure that the HTML document is served from a web server
+        - NOT accessing using the "file://" protocol

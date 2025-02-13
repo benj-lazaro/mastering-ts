@@ -1,0 +1,39 @@
+What's The Point Of Webpack
+---------------------------
+- This section focuses on using TypeScript with Webpack
+    - This is OPTIONAL
+    
+    - TypeScript can be used in all sort of situations where
+        - Webpack will be used or not
+
+
+- Webpack (https://webpack.js.org/)
+    - Helps take complex applications that consists of
+        - Hundreds of different files with dependencies
+            - Importing & exporting things
+            - Splitting into different files & 3rd party libraries
+
+    - It creates bundles
+        - Combines, compress said files into small(ish) bundles that 
+            - Can be included into a website / web application 
+            - Relevant to today's web applications with the rise of single-page apps (SPA)
+        
+        - Make few HTTP requests (as possible) to download & load
+            - Download the corresponding JavaScript libraries
+            - Load them in the right order
+
+    - It balances two (2) concerns
+        - Every separate script lead to a new HTTP request in the browser
+            - This can lead to a bottleneck
+            - Make things VERY SLOW
+
+        - Writing code in one (1) single file
+            - Is an absolute nightmare
+
+
+    - It takes a ton of different assets
+        - Bundles them together into static assets (a file or files)
+        - Load the bundle as a single script
+
+    - This section focuses on how to tell Webpack to
+        - Treat and handle TypeScript files as TypeScript

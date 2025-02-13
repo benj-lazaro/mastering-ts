@@ -1,0 +1,68 @@
+import / export Syntax In Depth
+-------------------------------
+- A refresher on ES module syntax namely "import" & "export"
+
+
+- Named exports
+    - Individually export members from a separate file
+        - Members being a class, a constant variable, a function, etc.
+
+            export <member_name> = <value>;
+
+            export <member_name>() {
+                ...
+            }
+
+            export <member_name> {
+                ...
+            }
+
+
+- Named imports
+    - Importing named exports into a file
+        - Using the keyword "import"
+        - Followed by the member(s) of named exports enclosed in a pair of {}
+        - Then the keyword "from"
+        - Followed by the path and external file were the named exports are stored
+
+            import { <exported_member>, ... } from "<path/file>";
+
+        - NOTE: imported named exports MUST MATCH the defined named exports
+            - To use a different name use the keyword "as"
+            - Followed by a new name
+
+            import { <exported_member> as <new_name> } from "<path/file>";
+
+
+- Default named export
+    - Using the keyword "default" on a named export
+        - NOTE: Can ONLY apply to one (1) named export per file / module
+
+    - Applicable to an exported named class, function or variable
+
+    - In doing so changes the way it is imported
+
+        import <default_named_export> from "<path/file>";
+
+        - NOTE: The name used for the imported default named export 
+            - Is just a cotainer or placeholder
+            - It can be replaced witi any name
+            - It does NOT have to MATCH the named export
+
+
+Syntax:
+
+    // Default named export
+    export default <variable_name> = <value>;
+
+    export default <function_name>() {
+        ...
+    }
+
+    export default <class_name> {
+        ...
+    }
+
+
+    // Importing default named export
+    import <default_named_export> from "<path/file>";

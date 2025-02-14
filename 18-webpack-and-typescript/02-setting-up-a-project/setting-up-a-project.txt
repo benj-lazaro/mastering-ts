@@ -1,0 +1,27 @@
+Setting Up A Project
+--------------------
+- Setup a project 
+    - With a few different BUT connected files
+    - Then later create a Webpack bundle from it
+
+
+- The sample project demonstrates
+    - Each JavaScript file is loaded successively by the browser
+
+
+- If a dependency is imported Types into another dependency of the index.ts file
+    - TypeScript will NOT flag an error
+    
+    - However, during runtime JavaScript will flag an error
+        - It fails to resolve the module (with Types)
+        
+        - As noted in the section Modules
+            - Types are NOT imported after .ts is compiled into .js
+            - There is/are NO corresponding .js file(s) generated
+    
+    - To address this concern
+        - Webpack is one of the few solutions
+
+        - To create a bundle
+            - Include all related files / dependencies
+            - Load them in the correct order

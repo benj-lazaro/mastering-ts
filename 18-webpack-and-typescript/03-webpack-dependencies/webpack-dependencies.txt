@@ -1,0 +1,37 @@
+Installing Webpack Dependencies
+-------------------------------
+- Install the initial dev dependencies for Webpack using npm
+
+    npm i --save-dev webpack webpack-cli typescript ts-loader
+
+
+- Brief description on each dependency 
+    - webpack
+        - Installs Webpack, the module bundler
+
+    - webpack-cli
+        - To call & use Webpack from the command-line
+        - To call from within package.json
+
+        - NOTE: Requires separate installation
+            - As it does NOT come bunbled with webpack
+
+    - typescript
+        - It is good practice to include TypeScript
+            - In the project's "package.json"
+        
+        - Provide information on the specific version of TypeScript
+            - Used in the project
+        
+    - ts-loader
+        - Serves as the middleman between TypeScript and Webpack
+
+        - It calls TypeScript compiler on the command-line
+            - To compile the code into JavaScript
+        
+        - Then hands over to Webpack
+            - To bundle everything together
+
+        - Github repository (https://github.com/TypeStrong/ts-loader)
+
+    

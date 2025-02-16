@@ -1,0 +1,120 @@
+Basic Webpack Config
+--------------------
+- The configuration of Webpack for TypeScript
+    - Reference (https://webpack.js.org/guides/typescript/#root)
+
+
+- Create a file named "webpack.config.js"
+    - Outside the folder "src"
+
+
+- Open the file "webpack.config.js"
+    - Require the module "path"
+        - Save it to a constant variable named "path"
+        
+            const path = require("path");
+
+
+    - Declare "module.exports"
+
+        module.exports = {
+            ...
+        };
+
+
+    - Create the following entries & assign their values
+        - Enclosed within the pair of { }
+
+
+    - The property "entry" (string value) that tells Webpack where 
+        - To enter the application and start bundling
+
+
+    - The property "module" (object value) that contains
+        - A property "rules (array of objects value) that stores different rules
+
+        - The property "test" (regex value)
+            - Assign the pattern "/\.tsx?$/"
+                - The "$" meant to look for "ts" or "tsx" at the end of a file
+                - The "?" meant the character "x" is optional
+                - It searches for ".ts" or ".tsx" files
+
+        - The property "use" tells Webpack 
+            - What to use with the "ts" or "tsx" files
+            - Assign the value "ts-loader"
+
+        - The property "exclude" informs Webpack
+            - What directory to exclude when bundling
+            - Typically, excludes the "node_modules" directory
+
+
+    - The property "resolve" (object value) that contains
+        - A property "extensions" (array of strings) that stores 
+            - The filename extensions to be resolved during bundling
+        
+    
+    - The property "output" (object value) that contains
+        - A property "filename" that states the name of the bundle
+            - Assigns the value "bundle.js"
+            - Store the file into the value of the property "path"
+
+        - A property "path" calls method "path.resolve()"
+            - Passes the value of "__dirname" and "dist"
+    
+    - Save the changes
+
+
+- Open the file "package.json"
+    - In the "script" section
+    
+    - Add a script named "build"
+        - Assign the value "webpack"
+        
+    - Save the changes
+
+
+- Test Webpack via terminal
+
+    npm run build
+
+    - Webpack flags an error on unable to resolve imported files with ".js"
+        - Found on the import statements of index.ts
+
+    - To address this concern
+        - Remove the ".js" extensions from the import statements from all ".ts" files
+
+    - Save the changes and re-run npm
+
+
+- To link the created file "dist/bundle.js" to the index.html
+    - Open the file index.html
+
+    - Replace the assigned value for the attribute "src"
+        - Of the <script> element to "bundle.js"
+
+    - Delete the attribute "type"
+        - Since the "bundle.js" is a single bundled file
+        - It includes everything
+        - There is NO import statements inside of it
+
+    - Save the changes
+
+
+- Serve the web application
+
+    npm start
+
+    - The browser's JavaScript console 
+        - Does NOT flag any error as before
+        - Every dependency is loaded with NO issues
+
+
+- The issue with "bundle.js" is 
+    - On how to debug the generated code
+
+    - To address this concern
+        - Setup Source Maps
+        - Use Webpack's dev server
+        - Set mode to "development"
+
+        - NOTE: Topics to be discussed on the next section

@@ -1,0 +1,57 @@
+Webpack Dev Server
+------------------
+- Few Webpack tweaks during development
+    - To address the warning in configuration "The mode option has not been set"
+        - Fallback setting is "production"
+
+    - Open the file "webpack.config.js"
+        - Add the property "mode"
+            - Assign the value "development"
+            - NOTE: The property is position BEFORE the property "entry"
+
+        - Save the changes
+
+    - Rebundle and launch web application
+
+        npm run build
+
+        npm start
+
+
+- Opening the bundled file "bundle.js"
+    - The contents is NOT minified
+
+
+- Next is to use the Webpack Dev Server instead of the lite-server
+    - It handles bundling the files in memory
+        - Then serves the web application
+        - By clicking the generated local URL
+
+    - To install the webpack-dev-server via npm
+        
+        npm i --save-dev webpack-dev-server
+
+    - Open the file "package.json"
+        - Rename the script "start" with "serve"
+        - Rename the assigned value to "webpack serve"
+        - Save the changes
+
+    - Open the file "webpack.config.js"
+        - Add a new property "devServer"
+            - Assign an object as value
+            - Inside the object, add the property "directory"
+            - Assign the value 'path.join(__dirname, "./")'
+            - NOTE: The property "devServer" is position RIGHT AFTER "devtool"
+
+        - On the property "output"
+            - Add a new property named "publicPath"
+            - Assign the value "/dist"
+
+        - Save the changes
+
+    - Run Webpack Dev Server
+
+        npm run serve
+
+    - Open browser
+        - URL: http://localhost:8080

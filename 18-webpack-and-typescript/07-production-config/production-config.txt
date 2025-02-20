@@ -1,0 +1,83 @@
+Production Configuration
+------------------------
+- To setup a "production" configuration for Webpack using:
+
+        npm run build
+
+    - That co-exists with the "development" configuration using:
+    
+        npm run serve
+
+
+- Create a separate Webpack configuration file
+    - Open and copy the contents of the file "webpack.config.js"
+    - Save it as "webpack.prod.js"
+    - NOTE: It MUST be on the same location as the original file
+
+
+- Open the file "webpack.prod.js"
+    - Change the assigned value of the property "mode"
+        - From "development" to "production"
+
+    - Save the changes
+
+
+- Open the file "package.json"
+    - Change the assigned value of the property "build"
+        - From "webpack" to "webpack --config webpack.prod.js"
+
+    - Save the changes
+
+
+- To distinguish the configuration files between "development and "production"
+    - Rename "webpack.config.js" to "webpack.dev.js"
+        - From "webpack-dev-server" to "webpack-dev-server --config webpack.dev.js"
+
+    - Open the file "package.json"
+        - Change the assigned value of the property "webpack-dev-server"
+            - To "webpack-dev-server --config webpack.dev.js"
+
+
+- Add a special plug-in named ""
+    - It cleans out the contents of "./dist" folder for every build
+        - Relevant when using "[contenthash]"
+            - On the property "output" of the "webpack.prod.js"
+        
+                output: {
+                    filename: "[contenthash]bundle.js",
+                    ...
+                }
+
+         - Generates a unique "<hash>bundle.js" file for every build
+            - Accumulates files over time
+
+
+    - To install the plugin
+
+        npm i --save-dev clean-webpack-plugin
+
+
+    - To configure Webpack to use the plugin
+        - Open the file "webpack.prod.js"
+
+        - Require the Webpack plugin
+
+            const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+
+        - Add a property named "plugins" right after "output"
+            - Assign an array as value
+        
+        - Inside the array, add the plugin as an element
+
+            new CleanWebpackPlugin()
+
+        - Save the changes
+            - Run a build
+
+                npm run build
+
+        - Clears the previous generated files in the "./dist" directory
+            - Leaves the current build in place
+            - NOTE: May take a while to clean the directory
+
+        

@@ -1,0 +1,42 @@
+React & TypeScript Introduction
+-------------------------------
+- This section focuses on
+    - React with TypeScript
+    - How to use React Types
+    - How to create React app with TypeScript
+
+
+- React is a JavaScript library for building user interfaces
+    - It uses vanilla JavaScript BUT can add-in TypeScript Types
+        - Similarly to importing Types from the DefinitelyTyped repository
+            - It carries Types for React
+
+            - Types that can manually be added in to some React application
+                - e.g. interface ReactComponentElement and more
+
+            - GitHub Repository (https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react)
+
+    - Website (https://react.dev/)
+
+
+- To create a React app with TypeScript integrated using the script "create-react-app"
+    - Open the terminal and use the command:
+
+        npx create-react-app my-app --template typescript
+        
+        - Creates a React app
+            - Includes a TypeScript config file (tsconfig.json)
+
+        - Creates .tsx files instead of .jsx files
+        
+        - Takes care of converting current React apps 
+            - From using vanilla JavaScript to TypeScript
+
+        - Reference (https://create-react-app.dev/docs/adding-typescript)
+
+
+- Alternatively, TypeScript Types can be added into a React app
+    - By installing them using yarn:
+
+        yarn add typescript @types/node @types/react @types/react-dom @types/jest
+

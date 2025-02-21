@@ -1,0 +1,59 @@
+Create React App With TypeScript
+--------------------------------
+- Creating the first React app with TypeScript support
+    - Using the command:
+
+        npx create-react-app <folder_name> --template typescript
+
+        - NOTE: Use "." as folder name to create the app on the current directory
+
+        - Reference (https://create-react-app.dev/docs/adding-typescript/)
+
+
+    - Upon successful installation
+        - Displays a brief message 
+
+            Success! Created code at <chosen_directory>
+            Inside that directory, you can run several commands:
+
+                npm start
+                    Starts the development server
+                ...
+
+        - This creates a basic React app skeleton
+
+
+    - To start the development server
+        - Go inside the folder app
+
+        - Run the command:
+
+            npm start
+
+        - Launches the default browser
+            - Loads the basic homepage (i.e. initial starting template)
+
+            - NOTE: The loaded file refers to the App.tsx (TypeScript version)
+                - Instead of the App.jsx (JavaScript version)
+
+    - The "index.tsx" loads & renders the App component (i.e. App.tsx)
+
+    - The "package.json" contains the downloaded libraries
+        - Such as react, react-dom, react-scripts, typescript and more
+        - Including Types for React from DefinitelyTypes repository
+
+    - The "tsconfig.json" is the generated TypeScript configuration file
+        - A leaner configuration file without the comments
+
+    - Any changes made in the file "App.tsx"
+        - It will automatically call the "tsc" command to compile TypeScript        
+        - Webpack transpiles the code from TypeScript to JavaScript
+        - Renders the implemented changes in the browser
+
+    - The "public" directory
+        - Where assets are stored
+        - e.g. images
+
+    - The "src" directory
+        - The ".tsx" file is the TypeScript flavor of JSX that is used to
+            - Write JavaScript with HTML templating syntax

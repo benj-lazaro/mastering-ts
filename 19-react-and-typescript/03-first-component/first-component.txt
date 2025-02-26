@@ -1,0 +1,64 @@
+Our First Component
+-------------------
+- Writing our first React functional component using TypeScript
+
+
+- Open the project folder "shopping-app"
+    - Open the folder "src"
+
+    - Create a folder named "components"
+
+    - Open the folder "components"
+        - Create a file named "Greeter.tsx"
+
+    - Open the file "Greeter.tsx"
+        - Import React 
+
+        - Define a function named "Greeter" that
+            - Returns an HTML element <h1> with a string content of "Hello!"
+
+        - Export the function as default
+
+        - Save the changes
+
+    - Open the file "App.tsx"
+        - Import the component "Greeter"
+            - Place it above the import statement of the "App.css"
+
+        - On the "App" component's JSX markup
+            - Render the component "Gretter"
+
+        - Save the changes
+
+    - Run the React app
+
+        npm start
+
+
+- Back the component "Greeter"
+    - Hovering over the declaration of the function Greeter
+        - Reveals that it implicitly returns a Type of "JSX.Element"
+
+    - To ensure the Type returned by the function
+        - It can be Type Annontated with JSX.Element
+        
+        - This HELPS avoiding a mistake of
+            - Returning a value of different Type (e.g. a string, number)
+            - Eventually breaking the app without waraning during development
+
+        - NOTE: Remember to import "JSX" object from the React library
+
+            import React, { JSX } from 'react';
+
+
+- To learn more about Types & different patterns 
+    - For writing React components with TypeScript
+
+    - Cheatsheet for experienced React developers that are
+        - Getting started with TypeScript
+
+        - GitHub (https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets)
+        - Website (https://react-typescript-cheatsheet.netlify.app/)
+
+    - NOTE: This is NOT the official documentation
+        - It is opinionated

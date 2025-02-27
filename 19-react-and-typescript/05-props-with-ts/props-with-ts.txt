@@ -1,0 +1,43 @@
+Props With TypeScript
+---------------------
+- One pattern of defining props in a React component
+    - In JSX mark-up of the <App> component (App.tsx)
+
+    - On the <Greeter> component
+        - Add the props named "person"
+        - Followed by a "=" and a value
+
+    - On the function component (i.e. <Greeter>)
+        - Define a parameter variable named "props"
+
+        - Type annotate it as an object
+            - User the name of the props in App.tsx as a property
+            - Then type annontate said property
+
+    - To access the value of the props on the return statement
+        - Treat it like accessing the property of an object
+    
+            {props.<property_name>} 
+
+    - NOTE: The downside of this approach
+        - The list of props gets longer for more complicated props
+        - This approach is good for simple props
+
+
+- The alternative pattern (and commonly used one) is
+    - To define an interface for the props
+        - Outside of the function component
+
+    - On the function component
+        - Instead of defining a parameter variable with the name of "props"
+
+        - Pass an object that is type annontated with the defined interface
+            - Select the needed properties from the interface
+            - Declare them inside the { }
+            - NOTE: Effectively destructuring the interface props
+
+    - To access the value of the props on the return statement
+        - Treat it like accessing the property of an object
+        - NO need to reference the object (i.e. interface props) anymore
+
+                {<interfce_property_name>} 

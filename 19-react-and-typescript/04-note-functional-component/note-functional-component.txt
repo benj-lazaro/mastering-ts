@@ -1,0 +1,15 @@
+A Note On React Function Component
+----------------------------------
+- On other TypeScript courses
+    - Writes a Function Component (FC) using
+        - An older syntax
+        - Type annotates using React.FC
+
+            const <variable>: React.FC = () => {
+                ...
+            }
+
+
+    - NOTE: This syntax though still supported
+        - General consensus today is that React.FC is discouraged
+

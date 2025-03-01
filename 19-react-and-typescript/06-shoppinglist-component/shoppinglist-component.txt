@@ -1,0 +1,17 @@
+Creating The ShoppingList Component
+-----------------------------------
+- Creating a simple shopping list component 
+    - Essentially a to-do list  for shopping items
+        - Named <ShoppingList>
+        - Created within the folder "./src/components"
+
+    - The <ShoppingList> component will be renered in the <App> component
+
+    - The <App> component will manage
+        - The state of the <ShoppingList> component
+
+
+- The <ShoppingList> component will render
+    - A form (i.e. <ShoppingListForm> component)
+    - A bunch of HTML element <li>
+    

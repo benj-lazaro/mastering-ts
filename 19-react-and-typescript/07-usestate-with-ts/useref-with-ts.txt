@@ -1,0 +1,43 @@
+useState with TypeScript
+------------------------
+- Implementing a useState hook (component)
+    - Instead of relying on a hard-coded items in an array
+
+    - The useState will return
+        - An initial (empty) array
+        - A function that will update the useState
+
+
+- Create a sub-folder named "models" inside "src"
+    - Inside, creat a file named "item.ts"
+
+
+- Inside the file "item.ts"
+    - Cut and paste the interface "Item" 
+        - From the <App> component (App.tsx)
+
+    - Insert "export default" statement on the interface
+
+        export default interface Item {
+            id: number;
+            product: string;
+            quantity: number;
+        }
+
+    - Save the changes
+
+
+- Open the <App> component
+    - Import the interface "Item"
+
+        import Item from './models/item';
+
+    - Save the changes
+
+
+- Open the <ShoppingList> component
+    - Import the interface "Item"
+
+    - Remove the static interface "Item"
+
+    - Save the changes

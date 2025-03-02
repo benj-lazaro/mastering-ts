@@ -1,0 +1,9 @@
+useRef With TypeScript
+----------------------
+- Implement logic that 
+    - Takes the value from the <input> element of the <ShoppingListForm> component
+        - Using the React hook useRef
+
+    - Declare a new function in the <App> component
+        - To fetch the data from the <ShoppingListForm> component
+        - Display the data on the browser's JavaScript console

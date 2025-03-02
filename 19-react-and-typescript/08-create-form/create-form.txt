@@ -1,0 +1,6 @@
+Creating the ShoppingItem Form
+------------------------------
+- Add a new component that renders an HTML <form>
+    - Name the component "ShoppingListForm"
+    - Stored in the folder "components"
+

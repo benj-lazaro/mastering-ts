@@ -1,0 +1,19 @@
+Updating The State
+------------------
+- Implement the logic that 
+    - Updates the state in the <App> component
+        - Creating the function "setItems"
+        
+    - Re-rendering the list
+        - Adds the provided items into the list
+
+    - Install the npm package "uuidv4"
+        - To randomly generate an ID number for the added item
+    
+        npm i uuid
+
+    - Install the corresponding Types for uuidv4
+
+        npm i --save-dev @types/uuid
+
+    

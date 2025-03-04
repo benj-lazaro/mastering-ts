@@ -1,0 +1,6 @@
+Finishing Touches
+-----------------
+- Implement the logic
+    - To add the quantity of the item being added
+    - In the <ShoppingListForm> component
+
